@@ -37,7 +37,7 @@
 
 .menu-header h1 {
   color: white;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 800;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   text-align: center;
@@ -107,7 +107,7 @@
   }
   
   .menu-header h1 {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   
   .dishes-grid {

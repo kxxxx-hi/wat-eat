@@ -19,7 +19,7 @@
 }
 
 .main-title {
-  font-size: 4.5rem;
+  font-size: 3.2rem;
   font-weight: 800;
   color: white;
   margin-bottom: 20px;
@@ -28,7 +28,7 @@
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 40px;
   font-weight: 300;
@@ -41,7 +41,7 @@
   border: none;
   padding: 18px 36px;
   border-radius: 50px;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -123,16 +123,16 @@
 
 @media (max-width: 768px) {
   .main-title {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
   
   .subtitle {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   
   .order-btn {
     padding: 15px 30px;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   
   .food-item {

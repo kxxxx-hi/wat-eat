@@ -36,7 +36,7 @@ const DishCard = ({ dish, addToCart }) => {
           className="add-to-cart-btn"
           onClick={() => addToCart(dish)}
         >
-          Add to Cart
+          +
         </button>
       </div>
     </div>
