@@ -109,7 +109,7 @@
 }
 
 .add-to-cart-btn {
-  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  background: linear-gradient(45deg, #FF6B35, #FF8C00);
   color: white;
   border: none;
   padding: 12px 20px;
@@ -121,11 +121,13 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   width: 100%;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
 }
 
 .add-to-cart-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+  background: linear-gradient(45deg, #FF7A4A, #FF9A00);
 }
 
 .add-to-cart-btn:active {
