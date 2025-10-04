@@ -3,11 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-=======
-  background: linear-gradient(135deg, #ffbf00 0%, #ffa900 100%);
->>>>>>> 9041cc56605f3c4f8580a18f10a32394a7cf625c
   position: relative;
   overflow: hidden;
 }
@@ -35,13 +30,6 @@
 
 /* Button uses complementary blue */
 .order-btn {
-<<<<<<< HEAD
-  background: linear-gradient(45deg, #FF6B35, #FF8C00);
-  color: white;
-=======
-  background: linear-gradient(45deg, #0040ff, #1a66ff);
-  color: #ffffff;
->>>>>>> 9041cc56605f3c4f8580a18f10a32394a7cf625c
   border: none;
   padding: 18px 36px;
   border-radius: 50px;
