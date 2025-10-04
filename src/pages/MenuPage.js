@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { dishes } from '../data/dishes';
 import DishCard from '../components/DishCard';
@@ -7,6 +7,15 @@ import './MenuPage.css';
 
 const MenuPage = ({ cart, addToCart, removeFromCart, updateQuantity, getSubtotal, submitOrder }) => {
   const navigate = useNavigate();
+  const [selectedCuisine, setSelectedCuisine] = useState('All');
+
+  // Get unique cuisine types
+  const cuisineTypes = ['All', ...new Set(dishes.map(dish => dish.cuisine))];
+
+  // Filter dishes based on selected cuisine
+  const filteredDishes = selectedCuisine === 'All' 
+    ? dishes 
+    : dishes.filter(dish => dish.cuisine === selectedCuisine);
 
   const handleOrderSuccess = () => {
     navigate('/success');
@@ -28,13 +37,25 @@ const MenuPage = ({ cart, addToCart, removeFromCart, updateQuantity, getSubtotal
         </button>
         <h1>What's on the Menu?</h1>
         <div className="menu-stats">
-          <span>{dishes.length} delicious dishes</span>
+          <span>{filteredDishes.length} delicious dishes</span>
         </div>
+      </div>
+
+      <div className="cuisine-tabs">
+        {cuisineTypes.map(cuisine => (
+          <button
+            key={cuisine}
+            className={`cuisine-tab ${selectedCuisine === cuisine ? 'active' : ''}`}
+            onClick={() => setSelectedCuisine(cuisine)}
+          >
+            {cuisine}
+          </button>
+        ))}
       </div>
 
       <div className="menu-content">
         <div className="dishes-grid">
-          {dishes.map(dish => (
+          {filteredDishes.map(dish => (
             <DishCard 
               key={dish.id} 
               dish={dish} 

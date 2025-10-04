@@ -25,6 +25,21 @@
   overflow: hidden;
 }
 
+.cuisine-tag-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(45deg, #FFD700, #FFA500);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
 .dish-emoji {
   font-size: 4rem;
   animation: float 3s ease-in-out infinite;
@@ -87,24 +102,15 @@
 
 .dish-meta {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 20px;
+  padding-right: 50px;
 }
 
-.cuisine-tag {
-  background: linear-gradient(45deg, #FFD700, #FFA500);
-  color: white;
-  padding: 4px 12px;
-  border-radius: 15px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
 
 .cost {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: #00b894;
 }

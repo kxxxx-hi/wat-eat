@@ -10,6 +10,7 @@ const DishCard = ({ dish, addToCart }) => {
     <div className="dish-card">
       <div className="dish-image">
         <span className="dish-emoji">{dish.picture}</span>
+        <span className="cuisine-tag-overlay">{dish.cuisine}</span>
       </div>
       
       <div className="dish-info">
@@ -28,7 +29,6 @@ const DishCard = ({ dish, addToCart }) => {
         </div>
         
         <div className="dish-meta">
-          <span className="cuisine-tag">{dish.cuisine}</span>
           <span className="cost">${dish.cost.toFixed(2)} SGD</span>
         </div>
         
