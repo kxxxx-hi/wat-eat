@@ -13,7 +13,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
             min-height: 100vh;
         }
 
@@ -40,6 +40,7 @@
             text-align: center;
             position: relative;
             overflow: hidden;
+            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
         }
 
         .main-title {
@@ -47,7 +48,7 @@
             font-weight: 800;
             color: white;
             margin-bottom: 20px;
-            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             letter-spacing: -2px;
         }
 
@@ -60,7 +61,7 @@
         }
 
         .order-btn {
-            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            background: linear-gradient(45deg, #00b894, #00a085);
             color: white;
             border: none;
             padding: 18px 36px;
@@ -69,17 +70,23 @@
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 25px rgba(0, 184, 148, 0.3);
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .order-btn:hover {
             transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 12px 35px rgba(0, 184, 148, 0.4);
         }
 
         /* Menu Page Styles */
+        .menu-page {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+
         .menu-header {
             display: flex;
             align-items: center;
@@ -87,6 +94,11 @@
             margin-bottom: 30px;
             flex-wrap: wrap;
             gap: 20px;
+            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+            padding: 30px 20px;
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 10px 30px rgba(108, 92, 231, 0.2);
         }
 
         .back-btn {
@@ -111,7 +123,7 @@
             color: white;
             font-size: 2.5rem;
             font-weight: 800;
-            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             text-align: center;
             flex: 1;
         }
@@ -125,8 +137,8 @@
 
         .dishes-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
         }
 
         .dish-card {
@@ -146,12 +158,12 @@
         }
 
         .dish-image {
-            height: 200px;
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            height: 180px;
+            background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 4rem;
+            font-size: 3.5rem;
             animation: float 3s ease-in-out infinite;
         }
 
@@ -214,7 +226,7 @@
         }
 
         .cuisine-tag {
-            background: linear-gradient(45deg, #a29bfe, #6c5ce7);
+            background: linear-gradient(45deg, #6c5ce7, #a29bfe);
             color: white;
             padding: 4px 12px;
             border-radius: 15px;
@@ -231,7 +243,7 @@
         }
 
         .add-to-cart-btn {
-            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            background: linear-gradient(45deg, #00b894, #00a085);
             color: white;
             border: none;
             padding: 12px 20px;
@@ -247,7 +259,7 @@
 
         .add-to-cart-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+            box-shadow: 0 5px 15px rgba(0, 184, 148, 0.4);
         }
 
         /* Cart Styles */
@@ -260,6 +272,44 @@
             top: 20px;
             max-height: 80vh;
             overflow-y: auto;
+        }
+
+        .cart-toggle {
+            display: none;
+            background: linear-gradient(45deg, #00b894, #00a085);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            box-shadow: 0 8px 25px rgba(0, 184, 148, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .cart-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 35px rgba(0, 184, 148, 0.4);
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #6c5ce7;
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 600;
         }
 
         .cart-header {
@@ -278,7 +328,7 @@
         }
 
         .cart-count {
-            background: linear-gradient(45deg, #74b9ff, #0984e3);
+            background: linear-gradient(45deg, #6c5ce7, #a29bfe);
             color: white;
             padding: 4px 12px;
             border-radius: 15px;
@@ -467,7 +517,7 @@
         }
 
         .btn-secondary {
-            background: linear-gradient(45deg, #74b9ff, #0984e3);
+            background: linear-gradient(45deg, #6c5ce7, #a29bfe);
             color: white;
         }
 
@@ -656,7 +706,7 @@
         }
 
         .btn {
-            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            background: linear-gradient(45deg, #00b894, #00a085);
             color: white;
         }
 
@@ -670,15 +720,41 @@
                 gap: 20px;
             }
             
+            .dishes-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            
             .cart-container {
                 position: fixed;
                 bottom: 0;
                 left: 0;
                 right: 0;
                 top: auto;
-                max-height: 50vh;
+                max-height: 70vh;
                 border-radius: 20px 20px 0 0;
                 z-index: 100;
+                transform: translateY(100%);
+                transition: transform 0.3s ease;
+            }
+            
+            .cart-container.open {
+                transform: translateY(0);
+            }
+            
+            .cart-toggle {
+                display: block;
+            }
+            
+            .cart-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dishes-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
             }
         }
     </style>
@@ -712,7 +788,7 @@
                 </div>
                 
                 <div class="cart-sidebar">
-                    <div class="cart-container">
+                    <div class="cart-container" id="cart-container">
                         <div class="cart-header">
                             <h3>Cart</h3>
                             <span class="cart-count" id="cart-count">0 items</span>
@@ -734,6 +810,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            
+            <!-- Mobile Cart Toggle Button -->
+            <button class="cart-toggle" id="cart-toggle" onclick="toggleMobileCart()">
+                🛒
+                <span class="cart-badge" id="cart-badge">0</span>
+            </button>
             </div>
         </div>
     </div>
@@ -989,6 +1072,7 @@
             const cartItems = document.getElementById('cart-items');
             const cartCount = document.getElementById('cart-count');
             const subtotal = document.getElementById('subtotal');
+            const cartBadge = document.getElementById('cart-badge');
             
             if (cart.length === 0) {
                 cartItems.innerHTML = `
@@ -999,10 +1083,12 @@
                 `;
                 cartCount.textContent = '0 items';
                 subtotal.textContent = '$0.00 SGD';
+                cartBadge.textContent = '0';
                 return;
             }
             
             cartCount.textContent = `${cart.length} item${cart.length !== 1 ? 's' : ''}`;
+            cartBadge.textContent = cart.length;
             
             cartItems.innerHTML = '';
             cart.forEach(item => {
@@ -1028,6 +1114,11 @@
             
             const total = cart.reduce((sum, item) => sum + (item.cost * item.quantity), 0);
             subtotal.textContent = `$${total.toFixed(2)} SGD`;
+        }
+
+        function toggleMobileCart() {
+            const cartContainer = document.getElementById('cart-container');
+            cartContainer.classList.toggle('open');
         }
 
         function getSubtotal() {
