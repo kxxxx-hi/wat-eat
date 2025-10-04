@@ -1,56 +1,4 @@
-.menu-page {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #ffbf00 0%, #ffa900 100%);
-  padding: 20px 0;
-}
-
-.menu-header {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.back-btn {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-}
-
-.back-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
-  border-color: rgba(255, 255, 255, 0.5);
-  transform: translateY(-2px);
-}
-
-.menu-header h1 {
-  color: white;
-  font-size: 2.5rem;
-  font-weight: 800;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  flex: 1;
-}
-
-.menu-stats {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-weight: 600;
-  backdrop-filter: blur(10px);
-}
-
+/* layout */
 .menu-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -63,46 +11,29 @@
 
 .dishes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 cards per row on mobile */
+  gap: 20px;
 }
 
-.cart-sidebar {
-  position: relative;
-}
+.dishes-grid > * { min-width: 0; width: 100%; }
 
+/* breakpoints */
 @media (max-width: 1024px) {
-  .menu-content {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .cart-sidebar {
-    order: -1;
-  }
-  
-  .dishes-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
+  .menu-content { grid-template-columns: 1fr; gap: 20px; }
+  .cart-sidebar { order: -1; }
 }
 
-@media (max-width: 768px) {
-  .menu-header {
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
-  }
-  
-  .menu-header h1 {
-    font-size: 2rem;
-  }
-  
-  .dishes-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .menu-content {
-    padding: 0 15px;
-  }
+@media (min-width: 768px) {
+  .dishes-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1280px) {
+  .dishes-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* keep your existing colors; replace any future accents with these if needed */
+.menu-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffbf00 0%, #ffa900 100%);
+  padding: 20px 0;
 }
