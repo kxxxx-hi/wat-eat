@@ -1,6 +1,10 @@
 .success-page {
   min-height: 100vh;
+<<<<<<< HEAD
   background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+=======
+  background: linear-gradient(135deg, #ffbf00 0%, #ffa900 100%);
+>>>>>>> 9041cc56605f3c4f8580a18f10a32394a7cf625c
   display: flex;
   align-items: center;
   justify-content: center;
