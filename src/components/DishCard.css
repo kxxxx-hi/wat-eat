@@ -153,6 +153,7 @@
   margin-bottom: 3px;
   justify-content: flex-start;
   width: 100%;
+  text-align: left;
 }
 
 .rating-label {

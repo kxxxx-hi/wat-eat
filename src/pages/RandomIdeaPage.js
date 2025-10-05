@@ -53,7 +53,18 @@ const RandomIdeaPage = ({ addToCart }) => {
       <div className="idea-content">
         <div className={`dish-suggestion ${isShuffling ? 'shuffling' : ''}`}>
           <div className="suggestion-emoji">
-            {isShuffling ? '🎲' : currentDish.picture}
+            {isShuffling ? '🎲' : (
+              <img 
+                src={currentDish.picture} 
+                alt={currentDish.name}
+                className="idea-dish-img"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'block';
+                }}
+              />
+            )}
+            <span style={{display: 'none'}}>{currentDish.picture}</span>
           </div>
           
           <div className="suggestion-text">
