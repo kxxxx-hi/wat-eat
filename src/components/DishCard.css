@@ -167,6 +167,12 @@
   min-width: 0;
 }
 
+.dish-meta .add-to-cart-btn {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: auto;
+}
+
 
 .cost {
   font-size: 0.5rem;
@@ -182,24 +188,21 @@
   background: linear-gradient(45deg, #8a9a8a, #a8b5a8);
   color: white;
   border: none;
-  width: 10px;
-  height: 10px;
-  min-width: 10px;
-  min-height: 10px;
-  max-width: 10px;
-  max-height: 10px;
+  width: 10px !important;
+  height: 10px !important;
+  aspect-ratio: 1;
   border-radius: 50%;
   font-size: 0.4rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 1px 3px rgba(138, 154, 138, 0.3);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  flex-grow: 0;
-  flex-basis: 10px;
+  flex: none;
+  padding: 0;
+  margin: 0;
 }
 
 .add-to-cart-btn:hover {
