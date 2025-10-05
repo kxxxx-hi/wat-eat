@@ -184,6 +184,10 @@
   border: none;
   width: 10px;
   height: 10px;
+  min-width: 10px;
+  min-height: 10px;
+  max-width: 10px;
+  max-height: 10px;
   border-radius: 50%;
   font-size: 0.4rem;
   font-weight: 600;
@@ -194,6 +198,8 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 10px;
 }
 
 .add-to-cart-btn:hover {
