@@ -27,7 +27,7 @@ export const dishes = [
     kexinLikeability: 4,
     cost: 12,
     cuisine: "Dessert",
-    description: "Fudge like Marco likes it, tsk"
+    description: "Fudgy like Marco likes it, tsk"
   },
   {
     id: 4,
