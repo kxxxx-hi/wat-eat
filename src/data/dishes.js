@@ -112,7 +112,7 @@ export const dishes = [
   {
     id: 12,
     name: "Pappardelle Ragù",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Pappardelle%20Ragu%C3%A0.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Pappardelle%20Ragu.jpg",
     marcoLikeability: 5,
     kexinLikeability: 5,
     cost: 13.5,
