@@ -32,11 +32,6 @@ const RandomIdeaPage = ({ addToCart }) => {
     return '★'.repeat(rating) + '☆'.repeat(5 - rating);
   };
 
-  const handleAddToCart = () => {
-    addToCart(currentDish);
-    // Navigate to menu after adding to cart
-    navigate('/menu');
-  };
 
   if (!currentDish) {
     return (
@@ -91,14 +86,6 @@ const RandomIdeaPage = ({ addToCart }) => {
             disabled={isShuffling}
           >
             {isShuffling ? '🎲 Shuffling...' : '🎲 Try Another'}
-          </button>
-          
-          <button 
-            className="add-to-cart-btn" 
-            onClick={handleAddToCart}
-            disabled={isShuffling}
-          >
-            🛒 Add to Cart & Order
           </button>
         </div>
       </div>

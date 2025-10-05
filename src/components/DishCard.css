@@ -111,7 +111,7 @@
 }
 
 .dish-name {
-  font-size: 0.7rem;
+  font-size: 0.49rem;
   font-weight: 700;
   color: #4a4a4a;
   margin-bottom: 5px;
@@ -127,12 +127,15 @@
 
 .dish-ratings {
   margin-bottom: 10px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .rating {
   display: flex;
   align-items: center;
   margin-bottom: 3px;
+  justify-content: flex-start;
 }
 
 .rating-label {
@@ -141,6 +144,7 @@
   margin-right: 5px;
   min-width: 35px;
   font-size: 0.5rem;
+  text-align: left;
 }
 
 .stars {
@@ -155,6 +159,7 @@
   align-items: center;
   margin-bottom: 0;
   padding: 0;
+  gap: 8px;
 }
 
 
@@ -162,20 +167,22 @@
   font-size: 0.6rem;
   font-weight: 700;
   color: #8a9a8a;
+  white-space: nowrap;
+  overflow: visible;
 }
 
 .add-to-cart-btn {
   background: linear-gradient(45deg, #8a9a8a, #a8b5a8);
   color: white;
   border: none;
-  width: 25px;
-  height: 25px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(138, 154, 138, 0.3);
+  box-shadow: 0 2px 6px rgba(138, 154, 138, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -24,15 +24,6 @@ const HomePage = () => {
             </button>
           </div>
         </div>
-        
-        <div className="food-illustrations">
-          <div className="food-item">🍕</div>
-          <div className="food-item">🍜</div>
-          <div className="food-item">🍱</div>
-          <div className="food-item">🍔</div>
-          <div className="food-item">🥘</div>
-          <div className="food-item">🍣</div>
-        </div>
       </div>
     </div>
   );
