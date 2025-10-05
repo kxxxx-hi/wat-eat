@@ -9,7 +9,16 @@ const DishCard = ({ dish, addToCart }) => {
   return (
     <div className="dish-card">
       <div className="dish-image">
-        <span className="dish-emoji">{dish.picture}</span>
+        <img 
+          src={dish.picture} 
+          alt={dish.name}
+          className="dish-img"
+          onError={(e) => {
+            e.target.style.display = 'none';
+            e.target.nextSibling.style.display = 'block';
+          }}
+        />
+        <span className="dish-emoji" style={{display: 'none'}}>{dish.picture}</span>
         <span className="cuisine-tag-overlay">{dish.cuisine}</span>
       </div>
       
