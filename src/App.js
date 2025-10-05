@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import MenuPage from './pages/MenuPage';
 import SuccessPage from './pages/SuccessPage';
+import RandomIdeaPage from './pages/RandomIdeaPage';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -72,6 +73,10 @@ function App() {
           <Route 
             path="/success" 
             element={<SuccessPage orderData={orderData} />} 
+          />
+          <Route 
+            path="/idea" 
+            element={<RandomIdeaPage addToCart={addToCart} />} 
           />
         </Routes>
       </div>

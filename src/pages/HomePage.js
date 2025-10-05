@@ -15,9 +15,14 @@ const HomePage = () => {
         <div className="title-container fade-in-up">
           <h1 className="main-title">Wat eat??</h1>
           <p className="subtitle">click to order</p>
-          <button className="order-btn" onClick={handleClick}>
-            🍽️ Start Ordering
-          </button>
+          <div className="button-group">
+            <button className="order-btn" onClick={handleClick}>
+              🍽️ Start Ordering
+            </button>
+            <button className="idea-btn" onClick={() => navigate('/idea')}>
+              💡 Give me an idea
+            </button>
+          </div>
         </div>
         
         <div className="food-illustrations">

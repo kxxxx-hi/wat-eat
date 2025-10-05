@@ -18,6 +18,13 @@
   margin-bottom: 60px;
 }
 
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
 .main-title {
   font-size: 3.2rem;
   font-weight: 800;
@@ -48,6 +55,23 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   letter-spacing: 1px;
+  width: 250px;
+}
+
+.idea-btn {
+  background: linear-gradient(45deg, #1E90FF, #4169E1);
+  color: white;
+  border: none;
+  padding: 18px 36px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(30, 144, 255, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 250px;
 }
 
 .order-btn:hover {
@@ -55,7 +79,16 @@
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
 }
 
+.idea-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 35px rgba(30, 144, 255, 0.4);
+}
+
 .order-btn:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+.idea-btn:active {
   transform: translateY(-1px) scale(1.02);
 }
 
@@ -72,7 +105,7 @@
 .food-item {
   position: absolute;
   font-size: 3rem;
-  opacity: 0.03;
+  opacity: 0;
   animation: float 6s ease-in-out infinite;
 }
 
@@ -130,9 +163,10 @@
     font-size: 0.8rem;
   }
   
-  .order-btn {
+  .order-btn, .idea-btn {
     padding: 15px 30px;
     font-size: 0.8rem;
+    width: 200px;
   }
   
   .food-item {
