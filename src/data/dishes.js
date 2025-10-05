@@ -2,7 +2,7 @@ export const dishes = [
   {
     id: 1,
     name: "Beef Burger",
-    picture: "/images/Beef Burger.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Beef%20Burger.jpg",
     marcoLikeability: 4,
     kexinLikeability: 4,
     cost: 8,
@@ -12,7 +12,7 @@ export const dishes = [
   {
     id: 2,
     name: "Chickpea Fresh Pasta",
-    picture: "/images/Chickpea Fresh Pasta.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Chickpea%20Fresh%20Pasta.jpg",
     marcoLikeability: 5,
     kexinLikeability: 4,
     cost: 4,
@@ -22,7 +22,7 @@ export const dishes = [
   {
     id: 3,
     name: "Chocolate Cake",
-    picture: "/images/Chocolate Cake.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Chocolate%20Cake.jpg",
     marcoLikeability: 5,
     kexinLikeability: 4,
     cost: 12,
@@ -32,7 +32,7 @@ export const dishes = [
   {
     id: 4,
     name: "Dumplings",
-    picture: "/images/Dumplings.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Dumplings.jpg",
     marcoLikeability: 5,
     kexinLikeability: 5,
     cost: 8.0,
@@ -42,7 +42,7 @@ export const dishes = [
   {
     id: 5,
     name: "Egg Fried Rice",
-    picture: "/images/Egg Fried Rice.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Egg%20Fried%20Rice.jpg",
     marcoLikeability: 3,
     kexinLikeability: 3,
     cost: 2.8,
@@ -52,7 +52,7 @@ export const dishes = [
   {
     id: 6,
     name: "Focaccia with Nduja and Ham",
-    picture: "/images/Focaccia with Nduja and Ham.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Focaccia%20with%20Nduja%20and%20Ham.jpg",
     marcoLikeability: 5,
     kexinLikeability: 5,
     cost: 11.8,
@@ -62,7 +62,7 @@ export const dishes = [
   {
     id: 7,
     name: "Focaccia with Tomatoes and Mozzarella",
-    picture: "/images/Focaccia with Tomatoes and Mozzarella.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Focaccia%20with%20Tomatoes%20and%20Mozzarella.jpg",
     marcoLikeability: 5,
     kexinLikeability: 5,
     cost: 14,
@@ -72,7 +72,7 @@ export const dishes = [
   {
     id: 8,
     name: "Hummus",
-    picture: "/images/Hummus.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Hummus.jpg",
     marcoLikeability: 4,
     kexinLikeability: 5,
     cost: 3.2,
@@ -82,7 +82,7 @@ export const dishes = [
   {
     id: 9,
     name: "Lentil Soup",
-    picture: "/images/Lentil Soup.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Lentil%20Soup.jpg",
     marcoLikeability: 5,
     kexinLikeability: 4,
     cost: 4.5,
@@ -92,7 +92,7 @@ export const dishes = [
   {
     id: 10,
     name: "Mango Sticky Rice",
-    picture: "/images/Mango Sticky Rice.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Mango%20Sticky%20Rice.jpg",
     marcoLikeability: 5,
     kexinLikeability: 5,
     cost: 7.2,
@@ -102,7 +102,7 @@ export const dishes = [
   {
     id: 11,
     name: "Osmanthus Tangyuan",
-    picture: "/images/Osmanthus Tangyuan.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Osmanthus%20Tangyuan.jpg",
     marcoLikeability: 3,
     kexinLikeability: 5,
     cost: 2.8,
@@ -112,7 +112,7 @@ export const dishes = [
   {
     id: 12,
     name: "Pappardelle Ragù",
-    picture: "/images/Pappardelle Raguà.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Pappardelle%20Ragu%C3%A0.jpg",
     marcoLikeability: 5,
     kexinLikeability: 5,
     cost: 13.5,
@@ -122,7 +122,7 @@ export const dishes = [
   {
     id: 13,
     name: "Pappardelle ai Funghi",
-    picture: "/images/Pappardelle ai Funghi.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Pappardelle%20ai%20Funghi.jpg",
     marcoLikeability: 5,
     kexinLikeability: 5,
     cost: 12.8,
@@ -132,7 +132,7 @@ export const dishes = [
   {
     id: 14,
     name: "Roasted Pumpkin with Qiusu",
-    picture: "/images/Roasted Pumpkin with Qiusu.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Roasted%20Pumpkin%20with%20Qiusu.jpg",
     marcoLikeability: 4,
     kexinLikeability: 4,
     cost: 9.2,
@@ -142,7 +142,7 @@ export const dishes = [
   {
     id: 15,
     name: "Roasted Veggies Platter",
-    picture: "/images/Roasted Veggies Platter.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Roasted%20Veggies%20Platter.jpg",
     marcoLikeability: 4,
     kexinLikeability: 5,
     cost: 9.9,
@@ -152,7 +152,7 @@ export const dishes = [
   {
     id: 16,
     name: "Stolen Apples Camke",
-    picture: "/images/Stolen Apples Camke.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Stolen%20Apples%20Camke.jpg",
     marcoLikeability: 4,
     kexinLikeability: 3,
     cost: 0.2,
@@ -162,7 +162,7 @@ export const dishes = [
   {
     id: 17,
     name: "Strawberries",
-    picture: "/images/Strawberries.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Strawberries.jpg",
     marcoLikeability: 2,
     kexinLikeability: 5,
     cost: 5.0,
@@ -172,7 +172,7 @@ export const dishes = [
   {
     id: 18,
     name: "Tantanmen at Enishi",
-    picture: "/images/Tantanmen at Enishi.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Tantanmen%20at%20Enishi.jpg",
     marcoLikeability: 5,
     kexinLikeability: 5,
     cost: 22.5,
@@ -182,7 +182,7 @@ export const dishes = [
   {
     id: 19,
     name: "Tom Yum Fried Rice",
-    picture: "/images/Tom Yum Fried Rice.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Tom%20Yum%20Fried%20Rice.jpg",
     marcoLikeability: 5,
     kexinLikeability: 5,
     cost: 13.2,
@@ -192,11 +192,13 @@ export const dishes = [
   {
     id: 20,
     name: "Wrap with Chicken",
-    picture: "/images/Wrap with Chicken.jpg",
+    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Wrap%20with%20Chicken.jpg",
     marcoLikeability: 4,
     kexinLikeability: 4,
     cost: 7.5,
     cuisine: "Global",
     description: "Portable salad that learned karate."
   }
+];
+
 ];
