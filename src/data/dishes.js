@@ -200,5 +200,3 @@ export const dishes = [
     description: "Portable salad that learned karate."
   }
 ];
-
-];
