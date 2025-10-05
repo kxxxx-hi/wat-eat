@@ -17,27 +17,27 @@
 
 .dish-image {
   height: 200px;
-  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  background: #f8fafc;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  border-bottom: 1px solid #f1f5f9;
 }
 
 .cuisine-tag-overlay {
   position: absolute;
   top: 10px;
   left: 10px;
-  background: linear-gradient(45deg, #FFD700, #FFA500);
-  color: white;
+  background: #e5e7eb;
+  color: #374151;
   padding: 3px 8px;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.4px;
 }
 
 .dish-emoji {
@@ -64,12 +64,13 @@
 .dish-name {
   font-size: 1.0rem;
   font-weight: 700;
-  color: #2d3436;
+  color: #111827;
   margin-bottom: 8px;
+  font-family: 'Caveat', 'Patrick Hand', cursive;
 }
 
 .dish-description {
-  color: #636e72;
+  color: #6b7280;
   font-size: 0.7rem;
   line-height: 1.4;
   margin-bottom: 15px;
@@ -112,35 +113,33 @@
 .cost {
   font-size: 0.8rem;
   font-weight: 700;
-  color: #00b894;
+  color: #065f46;
 }
 
 .add-to-cart-btn {
   position: absolute;
   bottom: 15px;
   right: 15px;
-  background: linear-gradient(45deg, #FF6B35, #FF8C00);
-  color: white;
-  border: none;
+  background: #111827;
+  color: #f9fafb;
+  border: 1px solid #111827;
   width: 35px;
   height: 35px;
-  border-radius: 50%;
+  border-radius: 10px;
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  transition: background 0.2s ease, transform 0.1s ease;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .add-to-cart-btn:hover {
-  transform: translateY(-2px) scale(1.1);
-  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
-  background: linear-gradient(45deg, #FF7A4A, #FF9A00);
+  transform: translateY(-1px) scale(1.05);
+  background: #1f2937;
 }
 
 .add-to-cart-btn:active {
-  transform: translateY(0) scale(1.05);
+  transform: translateY(0) scale(1.02);
 }

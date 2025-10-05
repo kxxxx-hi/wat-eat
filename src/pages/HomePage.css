@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  background: #f3f4f6;
   position: relative;
   overflow: hidden;
 }
@@ -26,62 +26,60 @@
 }
 
 .main-title {
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: 800;
-  color: white;
-  margin-bottom: 20px;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  letter-spacing: -2px;
+  color: #111827;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+  font-family: 'Caveat', 'Patrick Hand', cursive;
 }
 
 .subtitle {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 40px;
-  font-weight: 300;
-  letter-spacing: 2px;
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 36px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 .order-btn {
-  background: linear-gradient(45deg, #FF6B35, #FF8C00);
-  color: white;
-  border: none;
-  padding: 18px 36px;
-  border-radius: 50px;
-  font-size: 0.9rem;
+  background: #111827;
+  color: #f9fafb;
+  border: 1px solid #111827;
+  padding: 16px 32px;
+  border-radius: 16px;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  transition: background 0.2s ease, transform 0.1s ease;
+  text-transform: none;
+  letter-spacing: 0.2px;
   width: 250px;
 }
 
 .idea-btn {
-  background: linear-gradient(45deg, #1E90FF, #4169E1);
-  color: white;
-  border: none;
-  padding: 18px 36px;
-  border-radius: 50px;
-  font-size: 0.9rem;
+  background: #374151;
+  color: #f9fafb;
+  border: 1px solid #374151;
+  padding: 16px 32px;
+  border-radius: 16px;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(30, 144, 255, 0.3);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  transition: background 0.2s ease, transform 0.1s ease;
+  text-transform: none;
+  letter-spacing: 0.2px;
   width: 250px;
 }
 
 .order-btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+  background: #1f2937;
 }
 
 .idea-btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 35px rgba(30, 144, 255, 0.4);
+  transform: translateY(-1px);
+  background: #4b5563;
 }
 
 .order-btn:active {

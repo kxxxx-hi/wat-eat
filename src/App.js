@@ -76,7 +76,7 @@ function App() {
           />
           <Route 
             path="/idea" 
-            element={<RandomIdeaPage addToCart={addToCart} />} 
+            element={<RandomIdeaPage />} 
           />
         </Routes>
       </div>

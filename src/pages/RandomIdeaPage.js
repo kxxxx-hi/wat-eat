@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { dishes } from '../data/dishes';
 import './RandomIdeaPage.css';
 
-const RandomIdeaPage = ({ addToCart }) => {
+const RandomIdeaPage = () => {
   const navigate = useNavigate();
   const [currentDish, setCurrentDish] = useState(null);
   const [isShuffling, setIsShuffling] = useState(false);
@@ -32,11 +32,7 @@ const RandomIdeaPage = ({ addToCart }) => {
     return '★'.repeat(rating) + '☆'.repeat(5 - rating);
   };
 
-  const handleAddToCart = () => {
-    addToCart(currentDish);
-    // Navigate to menu after adding to cart
-    navigate('/menu');
-  };
+  // Removed add-to-cart flow from idea page per new design
 
   if (!currentDish) {
     return (
@@ -91,14 +87,6 @@ const RandomIdeaPage = ({ addToCart }) => {
             disabled={isShuffling}
           >
             {isShuffling ? '🎲 Shuffling...' : '🎲 Try Another'}
-          </button>
-          
-          <button 
-            className="add-to-cart-btn" 
-            onClick={handleAddToCart}
-            disabled={isShuffling}
-          >
-            🛒 Add to Cart & Order
           </button>
         </div>
       </div>
