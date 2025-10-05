@@ -33,6 +33,18 @@ const DishCard = ({ dish, addToCart }) => {
           <button 
             className="add-to-cart-btn"
             onClick={() => addToCart(dish)}
+            style={{
+              width: '10px',
+              height: '10px',
+              minWidth: '10px',
+              minHeight: '10px',
+              maxWidth: '10px',
+              maxHeight: '10px',
+              aspectRatio: '1',
+              flex: 'none',
+              flexShrink: '0',
+              flexGrow: '0'
+            }}
           >
             +
           </button>
