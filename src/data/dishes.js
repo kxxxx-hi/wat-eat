@@ -2,197 +2,197 @@ export const dishes = [
   {
     id: 1,
     name: "Beef Burger",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Beef%20Burger.jpg",
+    picture: "/images/Beef Burger.jpg",
     marcoLikeability: 5,
     kexinLikeability: 3,
     cost: 8,
     cuisine: "American",
-    description: "Best with pineapple from auntie at hawker"
+    description: "Best with pineapple from auntie in HDB area"
   },
   {
     id: 2,
     name: "Chickpea Fresh Pasta",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Chickpea%20Fresh%20Pasta.jpg",
+    picture: "/images/Chickpea Fresh Pasta.jpg",
     marcoLikeability: 4,
     kexinLikeability: 5,
-    cost: 5,
+    cost: 4,
     cuisine: "Italian",
-    description: "Fart alert"
+    description: "Fart alert."
   },
   {
     id: 3,
     name: "Chocolate Cake",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Chocolate%20Cake.jpg",
+    picture: "/images/Chocolate Cake.jpg",
     marcoLikeability: 5,
     kexinLikeability: 5,
-    cost: 7.2,
+    cost: 12,
     cuisine: "Dessert",
-    description: "Fudgy"
+    description: "Fudge like Marco likes it, tsk"
   },
   {
     id: 4,
     name: "Dumplings",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Dumplings.jpg",
-    marcoLikeability: 4,
+    picture: "/images/Dumplings.jpg",
+    marcoLikeability: 6,
     kexinLikeability: 5,
-    cost: 12,
+    cost: 8.0,
     cuisine: "Chinese",
-    description: "Sichuanese pepper oil hmmmm"
+    description: "With Sichuanese pepper oil omg"
   },
   {
     id: 5,
     name: "Egg Fried Rice",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Egg%20Fried%20Rice.jpg",
+    picture: "/images/Egg Fried Rice.jpg",
     marcoLikeability: 4,
-    kexinLikeability: 4,
+    kexinLikeability: 2.8,
     cost: 6.0,
     cuisine: "Chinese",
-    description: "Another great peasant Chinese food."
+    description: "Yet another insanely good peasant Chinese food"
   },
   {
     id: 6,
     name: "Focaccia with Nduja and Ham",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Focaccia%20with%20Nduja%20and%20Ham.jpg",
+    picture: "/images/Focaccia with Nduja and Ham.jpg",
     marcoLikeability: 5,
     kexinLikeability: 3,
     cost: 11.8,
     cuisine: "Italian",
-    description: "Spicy spread. Fluffy bread. Drama-free bliss."
+    description: "You get these twice a year"
   },
   {
     id: 7,
     name: "Focaccia with Tomatoes and Mozzarella",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Focaccia%20with%20Tomatoes%20and%20Mozzarella.jpg",
+    picture: "/images/Focaccia with Tomatoes and Mozzarella.jpg",
     marcoLikeability: 4,
     kexinLikeability: 4,
-    cost: 10.9,
+    cost: 14,
     cuisine: "Italian",
-    description: "Caprese went carb-loading."
+    description: "You get these because he wants it for himself"
   },
   {
     id: 8,
     name: "Hummus",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Hummus.jpg",
+    picture: "/images/Hummus.jpg",
     marcoLikeability: 3,
     kexinLikeability: 5,
-    cost: 6.5,
+    cost: 3.2,
     cuisine: "Middle Eastern",
-    description: "Silky chickpea cloud. Spoon optional."
+    description: "Better and smoother"
   },
   {
     id: 9,
     name: "Lentil Soup",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Lentil%20Soup.jpg",
+    picture: "/images/Lentil Soup.jpg",
     marcoLikeability: 3,
     kexinLikeability: 4,
-    cost: 6.8,
+    cost: 4.5,
     cuisine: "Middle Eastern",
-    description: "Warm hug, low budget, high fiber."
+    description: "It's good when soup is clear"
   },
   {
     id: 10,
     name: "Mango Sticky Rice",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Mango%20Sticky%20Rice.jpg",
+    picture: "/images/Mango Sticky Rice.jpg",
     marcoLikeability: 5,
     kexinLikeability: 5,
-    cost: 7.9,
+    cost: 7.2,
     cuisine: "Thai",
-    description: "Summer plus coconut equals instant holiday."
+    description: "Depends on if the mango is soapy"
   },
   {
     id: 11,
     name: "Osmanthus Tangyuan",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Osmanthus%20Tangyuan.jpg",
+    picture: "/images/Osmanthus Tangyuan.jpg",
     marcoLikeability: 4,
     kexinLikeability: 5,
-    cost: 5.5,
+    cost: 2.8,
     cuisine: "Chinese",
-    description: "Chewy orbs in floral sweet soup. Orbiting joy."
+    description: "Chewy, balls."
   },
   {
     id: 12,
-    name: "Pappardelle Raguà",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Pappardelle%20Ragu%C3%A0.jpg",
+    name: "Pappardelle Ragù",
+    picture: "/images/Pappardelle Raguà.jpg",
     marcoLikeability: 5,
     kexinLikeability: 4,
     cost: 13.5,
     cuisine: "Italian",
-    description: "Wide noodles. Slow beef. Fast disappear."
+    description: "It's been more than 1 year since Marco last made it"
   },
   {
     id: 13,
     name: "Pappardelle ai Funghi",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Pappardelle%20ai%20Funghi.jpg",
+    picture: "/images/Pappardelle ai Funghi.jpg",
     marcoLikeability: 4,
     kexinLikeability: 5,
     cost: 12.8,
     cuisine: "Italian",
-    description: "Mushroom forest meets carb highway."
+    description: "It's been more than 1.8 years since Marco last made it"
   },
   {
     id: 14,
     name: "Roasted Pumpkin with Qiusu",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Roasted%20Pumpkin%20with%20Qiusu.jpg",
+    picture: "/images/Roasted Pumpkin with Qiusu.jpg",
     marcoLikeability: 3,
     kexinLikeability: 4,
     cost: 9.2,
     cuisine: "Fusion",
-    description: "Sweet squash goes chic. Qiusu-approved."
+    description: "Must be served with Qiusu, non negotiable."
   },
   {
     id: 15,
     name: "Roasted Veggies Platter",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Roasted%20Veggies%20Platter.jpg",
+    picture: "/images/Roasted Veggies Platter.jpg",
     marcoLikeability: 3,
     kexinLikeability: 5,
     cost: 9.9,
     cuisine: "Vegetarian",
-    description: "Color wheel of virtue. Salt helps."
+    description: "Proudly introduced by auntie Pina"
   },
   {
     id: 16,
     name: "Stolen Apples Camke",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Stolen%20Apples%20Camke.jpg",
+    picture: "/images/Stolen Apples Camke.jpg",
     marcoLikeability: 4,
     kexinLikeability: 3,
-    cost: 6.9,
+    cost: 0.2,
     cuisine: "Dessert",
-    description: "Yes, it’s ‘Camke’. The plot thickens like custard."
+    description: "The source of the ingredient is the key to success of this recipe"
   },
   {
     id: 17,
     name: "Strawberries",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Strawberries.jpg",
+    picture: "/images/Strawberries.jpg",
     marcoLikeability: 4,
     kexinLikeability: 4,
     cost: 5.0,
     cuisine: "Fruit",
-    description: "Sweet, tart, gone. Nature’s candy."
+    description: "Sweet. Melty. Sichuanese."
   },
   {
     id: 18,
     name: "Tantanmen at Enishi",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Tantanmen%20at%20Enishi.jpg",
+    picture: "/images/Tantanmen at Enishi.jpg",
     marcoLikeability: 5,
     kexinLikeability: 4,
-    cost: 14.5,
+    cost: 22.5,
     cuisine: "Japanese",
-    description: "Peppery noodles that high-five your sinuses."
+    description: "Once every quarter due to budget limit"
   },
   {
     id: 19,
     name: "Tom Yum Fried Rice",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Tom%20Yum%20Fried%20Rice.jpg",
+    picture: "/images/Tom Yum Fried Rice.jpg",
     marcoLikeability: 4,
     kexinLikeability: 5,
-    cost: 8.8,
+    cost: 13.2,
     cuisine: "Thai",
-    description: "Citrus, chili, wok hei. Boss fight accepted."
+    description: "4 times the price than if you'd get them in Chiang Mai."
   },
   {
     id: 20,
     name: "Wrap with Chicken",
-    picture: "https://github.com/kxxxx-hi/wat-eat/raw/main/public/images/Wrap%20with%20Chicken.jpg",
+    picture: "/images/Wrap with Chicken.jpg",
     marcoLikeability: 3,
     kexinLikeability: 4,
     cost: 7.5,
