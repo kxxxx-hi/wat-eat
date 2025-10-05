@@ -49,8 +49,8 @@ const RandomIdeaPage = ({ addToCart }) => {
   return (
     <div className="random-idea-page">
       <div className="idea-header">
-        <button className="back-btn" onClick={() => navigate('/')}>
-          ← Back
+        <button className="back-btn" onClick={() => navigate('/')} title="Back">
+          ←
         </button>
         <h1>💡 Give me an idea</h1>
       </div>
@@ -107,3 +107,5 @@ const RandomIdeaPage = ({ addToCart }) => {
 };
 
 export default RandomIdeaPage;
+
+

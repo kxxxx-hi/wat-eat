@@ -10,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  background: linear-gradient(135deg, #e8f5e8 0%, #f5f1e8 100%);
   min-height: 100vh;
 }
 
@@ -26,16 +26,34 @@ code {
 }
 
 .btn {
-  background: linear-gradient(45deg, #FF6B35, #FF8C00);
+  background: linear-gradient(45deg, #8a9a8a, #a8b5a8);
   color: white;
   border: none;
-  padding: 12px 24px;
-  border-radius: 25px;
-  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 11px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover::after {
+  opacity: 1;
 }
 
 .btn:hover {
@@ -48,45 +66,60 @@ code {
 }
 
 .btn-secondary {
-  background: linear-gradient(45deg, #1E90FF, #4169E1);
+  background: linear-gradient(45deg, #a8b5a8, #8a9a8a);
 }
 
 .btn-success {
-  background: linear-gradient(45deg, #00b894, #00a085);
+  background: linear-gradient(45deg, #8a9a8a, #6b7b6b);
 }
 
 .btn-danger {
-  background: linear-gradient(45deg, #e17055, #d63031);
+  background: linear-gradient(45deg, #b8a8a8, #9a8a8a);
 }
 
 .card {
   background: white;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: all 0.3s ease;
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #e8f5e8, #f5f1e8, #e8f5e8);
+  border-radius: 14px;
+  z-index: -1;
+  opacity: 0.3;
+  filter: blur(1px);
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .stars {
-  color: #ffd700;
-  font-size: 18px;
+  color: #d4c4a8;
+  font-size: 12px;
 }
 
 .cuisine-tag {
   display: inline-block;
-  background: linear-gradient(45deg, #FFD700, #FFA500);
+  background: linear-gradient(45deg, #a8b5a8, #8a9a8a);
   color: white;
-  padding: 4px 12px;
-  border-radius: 15px;
-  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 8px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 .modal-overlay {

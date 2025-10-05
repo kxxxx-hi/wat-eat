@@ -30,14 +30,13 @@ const DishCard = ({ dish, addToCart }) => {
         
         <div className="dish-meta">
           <span className="cost">${dish.cost.toFixed(2)} SGD</span>
+          <button 
+            className="add-to-cart-btn"
+            onClick={() => addToCart(dish)}
+          >
+            +
+          </button>
         </div>
-        
-        <button 
-          className="add-to-cart-btn"
-          onClick={() => addToCart(dish)}
-        >
-          +
-        </button>
       </div>
     </div>
   );
