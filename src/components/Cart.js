@@ -47,8 +47,8 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder, 
         <span className="cart-toggle-icon">{isExpanded ? '▲' : '▼'}</span>
       </div>
       
-      {/* Cart items section - always show if there are items */}
-      {cart.length > 0 && (
+      {/* Cart items section - only show when expanded */}
+      {isExpanded && cart.length > 0 && (
         <div className="cart-items">
           {cart.map(item => (
             <div key={item.id} className="cart-item">
