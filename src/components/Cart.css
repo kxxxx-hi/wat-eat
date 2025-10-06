@@ -87,6 +87,15 @@
   flex: 1;
 }
 
+.cart-item-img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
 .cart-item-emoji {
   font-size: 1.4rem;
   margin-right: 8px;

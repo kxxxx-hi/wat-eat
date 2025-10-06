@@ -137,6 +137,15 @@
   border-bottom: none;
 }
 
+.order-item-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
 .order-item-emoji {
   font-size: 1.4rem;
   margin-right: 10px;

@@ -50,7 +50,16 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
             {cart.map(item => (
               <div key={item.id} className="cart-item">
                 <div className="cart-item-info">
-                  <span className="cart-item-emoji">{item.picture}</span>
+                  <img 
+                    src={item.picture} 
+                    alt={item.name}
+                    className="cart-item-img"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'block';
+                    }}
+                  />
+                  <span className="cart-item-emoji" style={{display: 'none'}}>{item.picture}</span>
                   <div className="cart-item-details">
                     <h4>{item.name}</h4>
                     <span className="cart-item-price">${item.cost.toFixed(2)}</span>

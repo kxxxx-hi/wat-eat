@@ -35,7 +35,16 @@ const SuccessPage = ({ orderData }) => {
             <div className="order-items">
               {orderData.items.map(item => (
                 <div key={item.id} className="order-item">
-                  <span className="order-item-emoji">{item.picture}</span>
+                  <img 
+                    src={item.picture} 
+                    alt={item.name}
+                    className="order-item-img"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'block';
+                    }}
+                  />
+                  <span className="order-item-emoji" style={{display: 'none'}}>{item.picture}</span>
                   <div className="order-item-details">
                     <span className="order-item-name">{item.name}</span>
                     <span className="order-item-quantity">x{item.quantity}</span>
