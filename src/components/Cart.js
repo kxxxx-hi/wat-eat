@@ -37,6 +37,7 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
   }, [showConfirmModal]);
 
   return (
+    <>
     <div className="cart-container">
       <div className="cart-header" onClick={() => setIsExpanded(!isExpanded)}>
         <h3>Cart</h3>
@@ -115,6 +116,8 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
         </div>
       )}
 
+      </div>
+
       {showConfirmModal && (
         <div className="modal-overlay">
           <div className="modal">
@@ -131,7 +134,7 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
