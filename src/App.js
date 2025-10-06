@@ -152,89 +152,66 @@ function App() {
       
       {/* Portal Modal - renders directly to document.body */}
       {showConfirmModal && createPortal(
-        <>
-          {/* Backdrop */}
-          <div 
-            style={{
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              background: 'rgba(0, 0, 0, 0.7)',
-              zIndex: 999999,
-              backdropFilter: 'blur(5px)'
-            }}
-            onClick={handleHideModal}
-          />
-          
-          {/* Modal Content */}
-          <div 
-            className="app-modal-content"
-            style={{
-              position: 'fixed',
-              top: '50vh',
-              left: '50vw',
-              transform: 'translate(-50%, -50%)',
-              background: 'white',
-              padding: '30px',
-              borderRadius: '20px',
-              textAlign: 'center',
-              maxWidth: '400px',
-              width: '90%',
-              boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
-              zIndex: 1000000,
-              filter: 'none !important',
-              brightness: '1 !important'
-            }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h3 style={{ color: '#4a4a4a', marginBottom: '15px', fontSize: '1.2rem' }}>
-              Are you sure you wanna submit??
-            </h3>
-            <p style={{ color: '#6b6b6b', marginBottom: '20px', fontSize: '1rem' }}>
-              Total: ${getSubtotal().toFixed(2)} SGD
-            </p>
-            <div style={{ display: 'flex', gap: '15px', marginTop: '20px' }}>
-              <button 
-                onClick={handleHideModal}
-                style={{
-                  flex: 1,
-                  padding: '12px',
-                  borderRadius: '25px',
-                  fontWeight: '600',
-                  cursor: 'pointer',
-                  background: 'linear-gradient(45deg, #8a9a8a, #a8b5a8)',
-                  color: 'white',
-                  border: 'none',
-                  transition: 'all 0.3s ease'
-                }}
-              >
-                Cancel
-              </button>
-              <button 
-                onClick={async () => {
-                  await submitOrder();
-                  handleHideModal();
-                  window.location.href = '/success';
-                }}
-                style={{
-                  flex: 1,
-                  padding: '12px',
-                  borderRadius: '25px',
-                  fontWeight: '600',
-                  cursor: 'pointer',
-                  background: 'linear-gradient(45deg, #8a9a8a, #a8b5a8)',
-                  color: 'white',
-                  border: 'none',
-                  transition: 'all 0.3s ease'
-                }}
-              >
-                OK
-              </button>
-            </div>
+        <div 
+          style={{
+            position: 'fixed',
+            top: '50vh',
+            left: '50vw',
+            transform: 'translate(-50%, -50%)',
+            background: 'white',
+            padding: '30px',
+            borderRadius: '20px',
+            textAlign: 'center',
+            maxWidth: '400px',
+            width: '90%',
+            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+            zIndex: 999999999,
+            border: '2px solid #333'
+          }}
+        >
+          <h3 style={{ color: '#000', marginBottom: '15px', fontSize: '18px' }}>
+            Are you sure you wanna submit??
+          </h3>
+          <p style={{ color: '#000', marginBottom: '20px', fontSize: '16px' }}>
+            Total: ${getSubtotal().toFixed(2)} SGD
+          </p>
+          <div style={{ display: 'flex', gap: '15px', marginTop: '20px' }}>
+            <button 
+              onClick={handleHideModal}
+              style={{
+                flex: 1,
+                padding: '12px',
+                borderRadius: '5px',
+                fontWeight: '600',
+                cursor: 'pointer',
+                background: '#666',
+                color: 'white',
+                border: 'none'
+              }}
+            >
+              Cancel
+            </button>
+            <button 
+              onClick={async () => {
+                await submitOrder();
+                handleHideModal();
+                window.location.href = '/success';
+              }}
+              style={{
+                flex: 1,
+                padding: '12px',
+                borderRadius: '5px',
+                fontWeight: '600',
+                cursor: 'pointer',
+                background: '#333',
+                color: 'white',
+                border: 'none'
+              }}
+            >
+              OK
+            </button>
           </div>
-        </>,
+        </div>,
         document.body
       )}
     </Router>

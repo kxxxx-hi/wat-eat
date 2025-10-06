@@ -3,12 +3,12 @@
   "name": "Wat Eat - Dinner Ordering Game",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "images/youtiao-icon.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "favicon.png",
+      "src": "images/youtiao-icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
