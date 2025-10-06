@@ -1,6 +1,6 @@
 .random-idea-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #e8f5e8 0%, #f5f1e8 100%);
+  background: #F8F8F8;
   padding: 14px;
   position: relative;
   overflow: hidden;
@@ -17,16 +17,15 @@
 }
 
 .back-btn {
-  background: rgba(255, 255, 255, 0.6);
-  color: #4a4a4a;
-  border: 1px solid rgba(138, 154, 138, 0.3);
+  background: white;
+  color: #2C3E50;
+  border: 1px solid #E0E0E0;
   padding: 8px 12px;
-  border-radius: 20px;
+  border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-size: 0.7rem;
   min-width: 35px;
   height: 35px;
@@ -43,7 +42,7 @@
 }
 
 .idea-header h1 {
-  color: #4a4a4a;
+  color: #2C3E50;
   font-size: 1.4rem;
   font-weight: 800;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -58,10 +57,10 @@
 
 .dish-suggestion {
   background: white;
-  border-radius: 20px;
+  border-radius: 8px;
   padding: 28px;
   text-align: center;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 21px;
   transition: all 0.5s ease;
   position: relative;
@@ -93,25 +92,21 @@
 }
 
 .suggestion-text h2 {
-  color: #4a4a4a;
+  color: #2C3E50;
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 .dish-name {
-  color: #4a4a4a;
+  color: #2C3E50;
   font-size: 1.4rem;
   font-weight: 800;
   margin-bottom: 10px;
-  background: linear-gradient(45deg, #8a9a8a, #a8b5a8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .dish-description {
-  color: #6b6b6b;
+  color: #6C7A89;
   font-size: 0.7rem;
   line-height: 1.4;
   margin-bottom: 17px;
@@ -134,14 +129,14 @@
 
 .rating-label {
   font-weight: 600;
-  color: #4a4a4a;
+  color: #2C3E50;
   margin-right: 7px;
   min-width: 42px;
   font-size: 0.6rem;
 }
 
 .stars {
-  color: #d4c4a8;
+  color: #FFD700;
   font-size: 0.8rem;
   letter-spacing: 1px;
 }
@@ -155,24 +150,24 @@
 }
 
 .cuisine-tag {
-  background: linear-gradient(45deg, #a8b5a8, #8a9a8a);
+  background: #2C3E50;
   color: white;
   padding: 4px 11px;
-  border-radius: 15px;
+  border-radius: 4px;
   font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  box-shadow: 0 3px 10px rgba(138, 154, 138, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .cost {
   font-size: 0.8rem;
   font-weight: 700;
-  color: #8a9a8a;
-  background: rgba(138, 154, 138, 0.1);
+  color: #8BC34A;
+  background: rgba(139, 195, 74, 0.1);
   padding: 4px 11px;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 .action-buttons {
@@ -183,16 +178,16 @@
 }
 
 .reshuffle-btn {
-  background: linear-gradient(45deg, #a8b5a8, #8a9a8a);
+  background: #4A5C6E;
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 0.7rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(138, 154, 138, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
   letter-spacing: 0.7px;
   min-width: 126px;

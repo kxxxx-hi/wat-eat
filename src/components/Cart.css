@@ -1,7 +1,7 @@
 .cart-container {
   background: white;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 17px;
   position: sticky;
   top: 14px;
@@ -34,16 +34,16 @@
 }
 
 .cart-header h3 {
-  color: #4a4a4a;
+  color: #2C3E50;
   font-size: 0.8rem;
   font-weight: 700;
 }
 
 .cart-count {
-  background: linear-gradient(45deg, #8a9a8a, #a8b5a8);
+  background: #2C3E50;
   color: white;
   padding: 3px 8px;
-  border-radius: 12px;
+  border-radius: 8px;
   font-size: 0.6rem;
   font-weight: 600;
 }
@@ -104,12 +104,12 @@
 .cart-item-details h4 {
   font-size: 0.6rem;
   font-weight: 600;
-  color: #4a4a4a;
+  color: #2C3E50;
   margin-bottom: 3px;
 }
 
 .cart-item-price {
-  color: #8a9a8a;
+  color: #8BC34A;
   font-weight: 600;
   font-size: 0.5rem;
 }
@@ -146,7 +146,7 @@
 }
 
 .remove-btn {
-  background: #b8a8a8;
+  background: #e74c3c;
   color: white;
   border: none;
   width: 17px;
@@ -176,21 +176,21 @@
   margin-bottom: 14px;
   font-size: 0.6rem;
   font-weight: 600;
-  color: #4a4a4a;
+  color: #2C3E50;
 }
 
 .subtotal-amount {
-  color: #8a9a8a;
+  color: #8BC34A;
   font-size: 0.7rem;
 }
 
 .checkout-btn {
   width: 100%;
-  background: linear-gradient(45deg, #8a9a8a, #a8b5a8);
+  background: #2C3E50;
   color: white;
   border: none;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 0.6rem;
   font-weight: 600;
   cursor: pointer;
