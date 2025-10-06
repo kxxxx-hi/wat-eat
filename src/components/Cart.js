@@ -6,6 +6,7 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const handleCheckout = () => {
+    console.log('Checkout clicked, showing modal');
     setShowConfirmModal(true);
   };
 
@@ -20,10 +21,13 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
 
   // Add body class when modal is open
   useEffect(() => {
+    console.log('Modal state changed:', showConfirmModal);
     if (showConfirmModal) {
       document.body.classList.add('modal-open');
+      console.log('Added modal-open class to body');
     } else {
       document.body.classList.remove('modal-open');
+      console.log('Removed modal-open class from body');
     }
     
     // Cleanup on unmount
