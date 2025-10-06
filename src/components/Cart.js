@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Cart.css';
 
 const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }) => {
@@ -17,6 +17,20 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
   const handleCancelOrder = () => {
     setShowConfirmModal(false);
   };
+
+  // Add body class when modal is open
+  useEffect(() => {
+    if (showConfirmModal) {
+      document.body.classList.add('modal-open');
+    } else {
+      document.body.classList.remove('modal-open');
+    }
+    
+    // Cleanup on unmount
+    return () => {
+      document.body.classList.remove('modal-open');
+    };
+  }, [showConfirmModal]);
 
   return (
     <div className="cart-container">
