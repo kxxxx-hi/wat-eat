@@ -116,7 +116,8 @@
   line-height: 1.4;
   margin-bottom: 17px;
   max-width: 500px;
-  margin-left: auto;
+  text-align: left;
+  margin-left: 0;
   margin-right: auto;
 }
 
