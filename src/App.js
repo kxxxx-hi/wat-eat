@@ -8,7 +8,7 @@ import RandomIdeaPage from './pages/RandomIdeaPage';
 import { sendOrderNotification } from './services/emailService';
 
 // Menu wrapper component with navigation access
-function MenuPageWrapper({ cart, addToCart, removeFromCart, updateQuantity, getSubtotal, submitOrder, showModal, hideModal, showConfirmModal }) {
+function MenuPageWrapper({ cart, addToCart, removeFromCart, updateQuantity, getSubtotal, submitOrder, showModal, hideModal, showConfirmModal, onOrderSubmit }) {
   const navigate = useNavigate();
   
   const handleSubmitOrder = async () => {
@@ -35,6 +35,7 @@ function App() {
   const [cart, setCart] = useState([]);
   const [orderData, setOrderData] = useState(null);
   const [showConfirmModal, setShowConfirmModal] = useState(false);
+  const [currentPath, setCurrentPath] = useState(window.location.pathname);
 
   const addToCart = (dish) => {
     setCart(prevCart => {
@@ -169,6 +170,7 @@ function App() {
           
           {/* Modal Content */}
           <div 
+            className="app-modal-content"
             style={{
               position: 'fixed',
               top: '50vh',
@@ -209,9 +211,10 @@ function App() {
                 Cancel
               </button>
               <button 
-                onClick={() => {
-                  submitOrder();
+                onClick={async () => {
+                  await submitOrder();
                   handleHideModal();
+                  window.location.href = '/success';
                 }}
                 style={{
                   flex: 1,

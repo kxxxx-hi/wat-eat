@@ -277,7 +277,8 @@ body.modal-open {
 }
 
 body.modal-open .modal-overlay,
-body.modal-open .modal {
+body.modal-open .modal,
+body.modal-open .app-modal-content {
   filter: none !important;
 }
 
