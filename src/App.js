@@ -89,6 +89,8 @@ function App() {
     }
   };
 
+  console.log('App render - showConfirmModal:', showConfirmModal);
+
   return (
     <Router>
       <div className="App">
@@ -110,15 +112,29 @@ function App() {
             }}
             onClick={handleHideModal}
           >
+            {/* Debug indicator - should be visible */}
+            <div style={{
+              position: 'absolute',
+              top: '10px',
+              left: '10px',
+              background: 'red',
+              color: 'white',
+              padding: '10px',
+              zIndex: 1000000,
+              fontSize: '14px'
+            }}>
+              MODAL IS RENDERING
+            </div>
             <div 
               style={{
-                background: 'white',
+                background: 'lime',
                 padding: '30px',
                 borderRadius: '20px',
                 textAlign: 'center',
                 maxWidth: '400px',
                 width: '90%',
-                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+                border: '5px solid red'
               }}
               onClick={(e) => e.stopPropagation()}
             >
