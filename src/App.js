@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import MenuPage from './pages/MenuPage';
 import SuccessPage from './pages/SuccessPage';
 import RandomIdeaPage from './pages/RandomIdeaPage';
+import { sendOrderNotification } from './services/emailService';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -43,13 +44,24 @@ function App() {
     return cart.reduce((total, item) => total + (item.cost * item.quantity), 0);
   };
 
-  const submitOrder = () => {
-    setOrderData({
+  const submitOrder = async () => {
+    const orderData = {
       items: cart,
       subtotal: getSubtotal(),
       timestamp: new Date().toISOString()
-    });
+    };
+    
+    setOrderData(orderData);
     setCart([]);
+    
+    // Send email notification
+    try {
+      await sendOrderNotification(orderData);
+      console.log('Order notification email sent successfully');
+    } catch (error) {
+      console.error('Failed to send order notification email:', error);
+      // Don't prevent order completion if email fails
+    }
   };
 
   return (
