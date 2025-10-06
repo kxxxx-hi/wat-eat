@@ -80,19 +80,19 @@ function App() {
     setShowConfirmModal(false);
   };
 
-  // Add body class when modal is open for global dimming
-  useEffect(() => {
-    if (showConfirmModal) {
-      document.body.classList.add('modal-open');
-    } else {
-      document.body.classList.remove('modal-open');
-    }
-    
-    // Cleanup on unmount
-    return () => {
-      document.body.classList.remove('modal-open');
-    };
-  }, [showConfirmModal]);
+  // Global dimming disabled - using backdrop only
+  // useEffect(() => {
+  //   if (showConfirmModal) {
+  //     document.body.classList.add('modal-open');
+  //   } else {
+  //     document.body.classList.remove('modal-open');
+  //   }
+  //   
+  //   // Cleanup on unmount
+  //   return () => {
+  //     document.body.classList.remove('modal-open');
+  //   };
+  // }, [showConfirmModal]);
 
   const submitOrder = async () => {
     const orderData = {
@@ -183,7 +183,9 @@ function App() {
               maxWidth: '400px',
               width: '90%',
               boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
-              zIndex: 1000000
+              zIndex: 1000000,
+              filter: 'none !important',
+              brightness: '1 !important'
             }}
             onClick={(e) => e.stopPropagation()}
           >

@@ -271,8 +271,8 @@
   transition: all 0.3s ease;
 }
 
-/* Global dimming when modal is open */
-body.modal-open {
+/* Global dimming when modal is open - DISABLED */
+/* body.modal-open {
   filter: brightness(0.6) !important;
 }
 
@@ -280,7 +280,7 @@ body.modal-open .modal-overlay,
 body.modal-open .modal,
 body.modal-open .app-modal-content {
   filter: none !important;
-}
+} */
 
 /* Modal overlay - centered on screen */
 .modal-overlay {
