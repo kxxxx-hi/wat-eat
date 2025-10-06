@@ -272,8 +272,8 @@
 }
 
 /* Global body dimming when modal is open */
-body.modal-open * {
-  filter: brightness(0.3) !important;
+body.modal-open {
+  filter: brightness(0.8) !important;
 }
 
 body.modal-open .modal-overlay,
