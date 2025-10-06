@@ -6,6 +6,7 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const handleCheckout = () => {
+    alert('Checkout clicked!');
     console.log('Checkout clicked, showing modal');
     console.log('Current cart length:', cart.length);
     setShowConfirmModal(true);
@@ -120,44 +121,24 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
 
       </div>
 
+      {/* Simple test modal - should always be visible */}
       {showConfirmModal && (
         <div 
-          className="modal-overlay" 
           style={{
             position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            background: 'rgba(0, 0, 0, 0.7)',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            zIndex: 99999
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            background: 'red',
+            color: 'white',
+            padding: '50px',
+            fontSize: '24px',
+            zIndex: 999999,
+            border: '5px solid yellow'
           }}
         >
-          <div 
-            className="modal"
-            style={{
-              background: 'white',
-              padding: '30px',
-              borderRadius: '20px',
-              textAlign: 'center',
-              maxWidth: '400px',
-              width: '90%'
-            }}
-          >
-            <h3>Are you sure you wanna submit??</h3>
-            <p>Total: ${getSubtotal().toFixed(2)} SGD</p>
-            <div className="modal-buttons">
-              <button className="btn btn-secondary" onClick={handleCancelOrder}>
-                Cancel
-              </button>
-              <button className="btn btn-success" onClick={handleConfirmOrder}>
-                OK
-              </button>
-            </div>
-          </div>
+          TEST MODAL - CAN YOU SEE THIS?
+          <button onClick={() => setShowConfirmModal(false)}>Close</button>
         </div>
       )}
       
