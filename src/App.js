@@ -96,25 +96,25 @@ function App() {
       <div className="App">
         {/* Order Confirmation Modal */}
         {showConfirmModal && (
-          <div 
-            style={{
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              background: 'rgba(0, 0, 0, 0.7)',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              zIndex: 999999,
-              backdropFilter: 'blur(5px)'
-            }}
-            onClick={handleHideModal}
-          >
-            {/* Debug indicator - should be visible */}
+          <>
+            {/* Backdrop */}
+            <div 
+              style={{
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                background: 'rgba(0, 0, 0, 0.7)',
+                zIndex: 999999,
+                backdropFilter: 'blur(5px)'
+              }}
+              onClick={handleHideModal}
+            />
+            
+            {/* Debug indicator */}
             <div style={{
-              position: 'absolute',
+              position: 'fixed',
               top: '10px',
               left: '10px',
               background: 'red',
@@ -125,8 +125,14 @@ function App() {
             }}>
               MODAL IS RENDERING
             </div>
+            
+            {/* Modal Content - separate from backdrop */}
             <div 
               style={{
+                position: 'fixed',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
                 background: 'lime',
                 padding: '30px',
                 borderRadius: '20px',
@@ -134,14 +140,15 @@ function App() {
                 maxWidth: '400px',
                 width: '90%',
                 boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
-                border: '5px solid red'
+                border: '5px solid red',
+                zIndex: 1000000
               }}
               onClick={(e) => e.stopPropagation()}
             >
-              <h3 style={{ color: '#4a4a4a', marginBottom: '15px', fontSize: '1.2rem' }}>
+              <h3 style={{ color: 'black', marginBottom: '15px', fontSize: '1.2rem' }}>
                 Are you sure you wanna submit??
               </h3>
-              <p style={{ color: '#6b6b6b', marginBottom: '20px', fontSize: '1rem' }}>
+              <p style={{ color: 'black', marginBottom: '20px', fontSize: '1rem' }}>
                 Total: ${getSubtotal().toFixed(2)} SGD
               </p>
               <div style={{ display: 'flex', gap: '15px', marginTop: '20px' }}>
@@ -153,7 +160,7 @@ function App() {
                     borderRadius: '25px',
                     fontWeight: '600',
                     cursor: 'pointer',
-                    background: 'linear-gradient(45deg, #8a9a8a, #a8b5a8)',
+                    background: 'red',
                     color: 'white',
                     border: 'none',
                     transition: 'all 0.3s ease'
@@ -172,7 +179,7 @@ function App() {
                     borderRadius: '25px',
                     fontWeight: '600',
                     cursor: 'pointer',
-                    background: 'linear-gradient(45deg, #8a9a8a, #a8b5a8)',
+                    background: 'blue',
                     color: 'white',
                     border: 'none',
                     transition: 'all 0.3s ease'
@@ -182,7 +189,7 @@ function App() {
                 </button>
               </div>
             </div>
-          </div>
+          </>
         )}
         
         <Routes>
