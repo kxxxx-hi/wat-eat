@@ -6,7 +6,6 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder, 
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const handleCheckout = () => {
-    alert('Checkout clicked!');
     console.log('Checkout clicked, showing modal');
     console.log('Current cart length:', cart.length);
     showModal();
