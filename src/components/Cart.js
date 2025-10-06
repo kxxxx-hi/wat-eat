@@ -47,23 +47,8 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder, 
         <span className="cart-toggle-icon">{isExpanded ? '▲' : '▼'}</span>
       </div>
       
-      {/* Always show cart footer with subtotal and checkout button */}
-      <div className="cart-footer">
-        <div className="subtotal">
-          <span>Subtotal:</span>
-          <span className="subtotal-amount">${getSubtotal().toFixed(2)} SGD</span>
-        </div>
-        <button 
-          className={`checkout-btn ${cart.length === 0 ? 'disabled' : ''}`} 
-          onClick={handleCheckout}
-          disabled={cart.length === 0}
-        >
-          Checkout
-        </button>
-      </div>
-      
-      {/* Collapsible cart items section */}
-      {isExpanded && cart.length > 0 && (
+      {/* Cart items section - always show if there are items */}
+      {cart.length > 0 && (
         <div className="cart-items">
           {cart.map(item => (
             <div key={item.id} className="cart-item">
@@ -109,6 +94,21 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder, 
           ))}
         </div>
       )}
+      
+      {/* Always show cart footer with subtotal and checkout button */}
+      <div className="cart-footer">
+        <div className="subtotal">
+          <span>Subtotal:</span>
+          <span className="subtotal-amount">${getSubtotal().toFixed(2)} SGD</span>
+        </div>
+        <button 
+          className={`checkout-btn ${cart.length === 0 ? 'disabled' : ''}`} 
+          onClick={handleCheckout}
+          disabled={cart.length === 0}
+        >
+          Checkout
+        </button>
+      </div>
       
       {/* Show empty message when expanded and cart is empty */}
       {isExpanded && cart.length === 0 && (
