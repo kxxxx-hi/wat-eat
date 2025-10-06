@@ -10,7 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #e8f5e8 0%, #f5f1e8 100%);
+  background: #F8F8F8;
   min-height: 100vh;
 }
 
@@ -26,16 +26,16 @@ code {
 }
 
 .btn {
-  background: linear-gradient(45deg, #8a9a8a, #a8b5a8);
+  background: #2C3E50;
   color: white;
   border: none;
   padding: 8px 16px;
-  border-radius: 20px;
+  border-radius: 8px;
   font-size: 11px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
@@ -57,8 +57,8 @@ code {
 }
 
 .btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .btn:active {
@@ -66,21 +66,25 @@ code {
 }
 
 .btn-secondary {
-  background: linear-gradient(45deg, #a8b5a8, #8a9a8a);
+  background: white;
+  color: #2C3E50;
+  border: 1px solid #E0E0E0;
 }
 
 .btn-success {
-  background: linear-gradient(45deg, #8a9a8a, #6b7b6b);
+  background: #8BC34A;
+  color: white;
 }
 
 .btn-danger {
-  background: linear-gradient(45deg, #b8a8a8, #9a8a8a);
+  background: #e74c3c;
+  color: white;
 }
 
 .card {
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: all 0.3s ease;
   position: relative;
@@ -106,16 +110,16 @@ code {
 }
 
 .stars {
-  color: #d4c4a8;
+  color: #FFD700;
   font-size: 12px;
 }
 
 .cuisine-tag {
   display: inline-block;
-  background: linear-gradient(45deg, #a8b5a8, #8a9a8a);
+  background: #2C3E50;
   color: white;
   padding: 3px 8px;
-  border-radius: 12px;
+  border-radius: 4px;
   font-size: 8px;
   font-weight: 600;
   text-transform: uppercase;
