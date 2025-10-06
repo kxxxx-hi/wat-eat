@@ -7,7 +7,9 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
 
   const handleCheckout = () => {
     console.log('Checkout clicked, showing modal');
+    console.log('Current cart length:', cart.length);
     setShowConfirmModal(true);
+    console.log('Modal state set to true');
   };
 
   const handleConfirmOrder = () => {
@@ -119,8 +121,32 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
       </div>
 
       {showConfirmModal && (
-        <div className="modal-overlay">
-          <div className="modal">
+        <div 
+          className="modal-overlay" 
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(0, 0, 0, 0.7)',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            zIndex: 99999
+          }}
+        >
+          <div 
+            className="modal"
+            style={{
+              background: 'white',
+              padding: '30px',
+              borderRadius: '20px',
+              textAlign: 'center',
+              maxWidth: '400px',
+              width: '90%'
+            }}
+          >
             <h3>Are you sure you wanna submit??</h3>
             <p>Total: ${getSubtotal().toFixed(2)} SGD</p>
             <div className="modal-buttons">
@@ -134,6 +160,8 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
           </div>
         </div>
       )}
+      
+      {console.log('Modal should show:', showConfirmModal)}
     </>
   );
 };
