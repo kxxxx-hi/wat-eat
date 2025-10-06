@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Cart.css';
 
-const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }) => {
+const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder, showModal, hideModal }) => {
   const [showConfirmModal, setShowConfirmModal] = React.useState(false);
   const [isExpanded, setIsExpanded] = React.useState(false);
 
@@ -9,7 +9,7 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
     alert('Checkout clicked!');
     console.log('Checkout clicked, showing modal');
     console.log('Current cart length:', cart.length);
-    setShowConfirmModal(true);
+    showModal();
     console.log('Modal state set to true');
   };
 
@@ -121,28 +121,6 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
 
       </div>
 
-      {/* Simple test modal - should always be visible */}
-      {showConfirmModal && (
-        <div 
-          style={{
-            position: 'fixed',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            background: 'red',
-            color: 'white',
-            padding: '50px',
-            fontSize: '24px',
-            zIndex: 999999,
-            border: '5px solid yellow'
-          }}
-        >
-          TEST MODAL - CAN YOU SEE THIS?
-          <button onClick={() => setShowConfirmModal(false)}>Close</button>
-        </div>
-      )}
-      
-      {console.log('Modal should show:', showConfirmModal)}
     </>
   );
 };

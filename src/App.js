@@ -9,6 +9,7 @@ import { sendOrderNotification } from './services/emailService';
 function App() {
   const [cart, setCart] = useState([]);
   const [orderData, setOrderData] = useState(null);
+  const [showConfirmModal, setShowConfirmModal] = useState(false);
 
   const addToCart = (dish) => {
     setCart(prevCart => {
@@ -44,6 +45,15 @@ function App() {
     return cart.reduce((total, item) => total + (item.cost * item.quantity), 0);
   };
 
+  const handleShowModal = () => {
+    console.log('Showing modal from App.js');
+    setShowConfirmModal(true);
+  };
+
+  const handleHideModal = () => {
+    setShowConfirmModal(false);
+  };
+
   const submitOrder = async () => {
     const orderData = {
       items: cart,
@@ -53,6 +63,7 @@ function App() {
     
     setOrderData(orderData);
     setCart([]);
+    setShowConfirmModal(false);
     
     // Send email notification
     try {
@@ -67,6 +78,27 @@ function App() {
   return (
     <Router>
       <div className="App">
+        {/* Test Modal at App level */}
+        {showConfirmModal && (
+          <div 
+            style={{
+              position: 'fixed',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              background: 'red',
+              color: 'white',
+              padding: '50px',
+              fontSize: '24px',
+              zIndex: 999999,
+              border: '5px solid yellow'
+            }}
+          >
+            TEST MODAL FROM APP.JS - CAN YOU SEE THIS?
+            <button onClick={handleHideModal}>Close</button>
+          </div>
+        )}
+        
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route 
@@ -79,6 +111,9 @@ function App() {
                 updateQuantity={updateQuantity}
                 getSubtotal={getSubtotal}
                 submitOrder={submitOrder}
+                showModal={handleShowModal}
+                hideModal={handleHideModal}
+                showConfirmModal={showConfirmModal}
               />
             } 
           />

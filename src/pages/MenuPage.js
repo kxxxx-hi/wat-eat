@@ -5,7 +5,7 @@ import DishCard from '../components/DishCard';
 import Cart from '../components/Cart';
 import './MenuPage.css';
 
-const MenuPage = ({ cart, addToCart, removeFromCart, updateQuantity, getSubtotal, submitOrder }) => {
+const MenuPage = ({ cart, addToCart, removeFromCart, updateQuantity, getSubtotal, submitOrder, showModal, hideModal, showConfirmModal }) => {
   const navigate = useNavigate();
   const [selectedCuisine, setSelectedCuisine] = useState('All');
 
@@ -65,12 +65,14 @@ const MenuPage = ({ cart, addToCart, removeFromCart, updateQuantity, getSubtotal
         </div>
         
         <div className="cart-sidebar">
-          <Cart 
+          <Cart
             cart={cart}
             removeFromCart={removeFromCart}
             updateQuantity={updateQuantity}
             getSubtotal={getSubtotal}
             submitOrder={handleSubmitOrder}
+            showModal={showModal}
+            hideModal={hideModal}
           />
         </div>
       </div>
