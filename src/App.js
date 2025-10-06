@@ -1,11 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import MenuPage from './pages/MenuPage';
 import SuccessPage from './pages/SuccessPage';
 import RandomIdeaPage from './pages/RandomIdeaPage';
 import { sendOrderNotification } from './services/emailService';
+
+// Menu wrapper component with navigation access
+function MenuPageWrapper({ cart, addToCart, removeFromCart, updateQuantity, getSubtotal, submitOrder, showModal, hideModal, showConfirmModal }) {
+  const navigate = useNavigate();
+  
+  const handleSubmitOrder = async () => {
+    await submitOrder();
+    navigate('/success');
+  };
+
+  return (
+    <MenuPage 
+      cart={cart}
+      addToCart={addToCart}
+      removeFromCart={removeFromCart}
+      updateQuantity={updateQuantity}
+      getSubtotal={getSubtotal}
+      submitOrder={handleSubmitOrder}
+      showModal={showModal}
+      hideModal={hideModal}
+      showConfirmModal={showConfirmModal}
+    />
+  );
+}
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -101,7 +125,7 @@ function App() {
           <Route 
             path="/menu" 
             element={
-              <MenuPage 
+              <MenuPageWrapper 
                 cart={cart}
                 addToCart={addToCart}
                 removeFromCart={removeFromCart}
@@ -143,43 +167,28 @@ function App() {
             onClick={handleHideModal}
           />
           
-          {/* Debug indicator */}
-          <div style={{
-            position: 'fixed',
-            top: '10px',
-            left: '10px',
-            background: 'red',
-            color: 'white',
-            padding: '10px',
-            zIndex: 1000000,
-            fontSize: '14px'
-          }}>
-            MODAL IS RENDERING VIA PORTAL
-          </div>
-          
           {/* Modal Content */}
           <div 
             style={{
               position: 'fixed',
-              top: '50%',
-              left: '50%',
+              top: '50vh',
+              left: '50vw',
               transform: 'translate(-50%, -50%)',
-              background: 'lime',
+              background: 'white',
               padding: '30px',
               borderRadius: '20px',
               textAlign: 'center',
               maxWidth: '400px',
               width: '90%',
               boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
-              border: '5px solid red',
               zIndex: 1000000
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            <h3 style={{ color: 'black', marginBottom: '15px', fontSize: '1.2rem' }}>
+            <h3 style={{ color: '#4a4a4a', marginBottom: '15px', fontSize: '1.2rem' }}>
               Are you sure you wanna submit??
             </h3>
-            <p style={{ color: 'black', marginBottom: '20px', fontSize: '1rem' }}>
+            <p style={{ color: '#6b6b6b', marginBottom: '20px', fontSize: '1rem' }}>
               Total: ${getSubtotal().toFixed(2)} SGD
             </p>
             <div style={{ display: 'flex', gap: '15px', marginTop: '20px' }}>
@@ -191,7 +200,7 @@ function App() {
                   borderRadius: '25px',
                   fontWeight: '600',
                   cursor: 'pointer',
-                  background: 'red',
+                  background: 'linear-gradient(45deg, #8a9a8a, #a8b5a8)',
                   color: 'white',
                   border: 'none',
                   transition: 'all 0.3s ease'
@@ -210,7 +219,7 @@ function App() {
                   borderRadius: '25px',
                   fontWeight: '600',
                   cursor: 'pointer',
-                  background: 'blue',
+                  background: 'linear-gradient(45deg, #8a9a8a, #a8b5a8)',
                   color: 'white',
                   border: 'none',
                   transition: 'all 0.3s ease'
