@@ -18,24 +18,6 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
     setShowConfirmModal(false);
   };
 
-  if (cart.length === 0) {
-    return (
-      <div className="cart-container">
-        <div className="cart-header" onClick={() => setIsExpanded(!isExpanded)}>
-          <h3>Cart</h3>
-          <span className="cart-count">0 items</span>
-          <span className="cart-toggle-icon">{isExpanded ? '▲' : '▼'}</span>
-        </div>
-        {isExpanded && (
-          <div className="empty-cart">
-            <p>Your cart is empty</p>
-            <p className="empty-cart-subtitle">Add some delicious dishes!</p>
-          </div>
-        )}
-      </div>
-    );
-  }
-
   return (
     <div className="cart-container">
       <div className="cart-header" onClick={() => setIsExpanded(!isExpanded)}>
@@ -44,63 +26,75 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder }
         <span className="cart-toggle-icon">{isExpanded ? '▲' : '▼'}</span>
       </div>
       
-      {isExpanded && (
-        <>
-          <div className="cart-items">
-            {cart.map(item => (
-              <div key={item.id} className="cart-item">
-                <div className="cart-item-info">
-                  <img 
-                    src={item.picture} 
-                    alt={item.name}
-                    className="cart-item-img"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'block';
-                    }}
-                  />
-                  <span className="cart-item-emoji" style={{display: 'none'}}>{item.picture}</span>
-                  <div className="cart-item-details">
-                    <h4>{item.name}</h4>
-                    <span className="cart-item-price">${item.cost.toFixed(2)}</span>
-                  </div>
-                </div>
-                
-                <div className="cart-item-controls">
-                  <button 
-                    className="quantity-btn"
-                    onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                  >
-                    -
-                  </button>
-                  <span className="quantity">{item.quantity}</span>
-                  <button 
-                    className="quantity-btn"
-                    onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                  >
-                    +
-                  </button>
-                  <button 
-                    className="remove-btn"
-                    onClick={() => removeFromCart(item.id)}
-                  >
-                    ×
-                  </button>
+      {/* Always show cart footer with subtotal and checkout button */}
+      <div className="cart-footer">
+        <div className="subtotal">
+          <span>Subtotal:</span>
+          <span className="subtotal-amount">${getSubtotal().toFixed(2)} SGD</span>
+        </div>
+        <button 
+          className={`checkout-btn ${cart.length === 0 ? 'disabled' : ''}`} 
+          onClick={handleCheckout}
+          disabled={cart.length === 0}
+        >
+          Checkout
+        </button>
+      </div>
+      
+      {/* Collapsible cart items section */}
+      {isExpanded && cart.length > 0 && (
+        <div className="cart-items">
+          {cart.map(item => (
+            <div key={item.id} className="cart-item">
+              <div className="cart-item-info">
+                <img 
+                  src={item.picture} 
+                  alt={item.name}
+                  className="cart-item-img"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'block';
+                  }}
+                />
+                <span className="cart-item-emoji" style={{display: 'none'}}>{item.picture}</span>
+                <div className="cart-item-details">
+                  <h4>{item.name}</h4>
+                  <span className="cart-item-price">${item.cost.toFixed(2)}</span>
                 </div>
               </div>
-            ))}
-          </div>
-          
-          <div className="cart-footer">
-            <div className="subtotal">
-              <span>Subtotal:</span>
-              <span className="subtotal-amount">${getSubtotal().toFixed(2)} SGD</span>
+              
+              <div className="cart-item-controls">
+                <button 
+                  className="quantity-btn"
+                  onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                >
+                  -
+                </button>
+                <span className="quantity">{item.quantity}</span>
+                <button 
+                  className="quantity-btn"
+                  onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                >
+                  +
+                </button>
+                <button 
+                  className="remove-btn"
+                  onClick={() => removeFromCart(item.id)}
+                >
+                  ×
+                </button>
+              </div>
             </div>
-            <button className="checkout-btn" onClick={handleCheckout}>
-              Checkout
-            </button>
-          </div>
-        </>
+          ))}
+        </div>
+      )}
+      
+      {/* Show empty message when expanded and cart is empty */}
+      {isExpanded && cart.length === 0 && (
+        <div className="empty-cart">
+          <p>Your cart is empty</p>
+          <p className="empty-cart-subtitle">Add some delicious dishes!</p>
+        </div>
       )}
 
       {showConfirmModal && (

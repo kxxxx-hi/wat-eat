@@ -3,12 +3,19 @@
 
 export const sendOrderNotification = async (orderData) => {
   try {
-    // Using Formspree as a simple email service (free tier available)
-    // Replace with your Formspree form endpoint
-    const formspreeUrl = 'https://formspree.io/f/YOUR_FORM_ID';
-    
-    // Format the order data for email
+    // For now, let's log the email content to console for debugging
+    // You can set up Formspree later and uncomment the actual email sending code
     const orderSummary = formatOrderSummary(orderData);
+    
+    console.log('📧 EMAIL NOTIFICATION (would be sent to yyyangkx@gmail.com):');
+    console.log('='.repeat(60));
+    console.log(orderSummary);
+    console.log('='.repeat(60));
+    console.log('📊 Full Order Data:', JSON.stringify(orderData, null, 2));
+    
+    // TODO: Uncomment and configure when you set up Formspree
+    /*
+    const formspreeUrl = 'https://formspree.io/f/YOUR_FORM_ID';
     
     const formData = new FormData();
     formData.append('_to', 'yyyangkx@gmail.com');
@@ -29,6 +36,10 @@ export const sendOrderNotification = async (orderData) => {
       console.error('Failed to send order notification email');
       return { success: false, error: 'Failed to send email' };
     }
+    */
+    
+    // For now, always return success since we're just logging
+    return { success: true };
   } catch (error) {
     console.error('Error sending order notification:', error);
     return { success: false, error: error.message };
