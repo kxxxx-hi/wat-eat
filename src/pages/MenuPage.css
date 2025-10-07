@@ -48,8 +48,8 @@
 }
 
 .menu-header h1 {
-  font-family: 'MelonFruit', cursive, sans-serif;
   color: #2C3E50;
+  font-family: 'MelonFruit', cursive, sans-serif;
   font-size: 1.2rem;
   font-weight: 800;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -64,7 +64,8 @@
   border-radius: 8px;
   font-weight: 600;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 0.6rem;
+  font-family: 'PipersPlayroom', cursive, sans-serif;
+  font-size: 1rem;
 }
 
 .cuisine-tabs {
@@ -88,7 +89,8 @@
   border: 1px solid #E0E0E0;
   padding: 5px 10px;
   border-radius: 8px;
-  font-size: 0.6rem;
+  font-family: 'PipersPlayroom', cursive, sans-serif;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
