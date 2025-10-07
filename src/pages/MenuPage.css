@@ -43,7 +43,8 @@
 .menu-title-section {
   width: 100%;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .menu-header h1 {
@@ -68,7 +69,7 @@
 
 .cuisine-tabs {
   max-width: 1200px;
-  margin: 0 auto 20px;
+  margin: -10px auto 20px;
   padding: 0 20px;
   display: flex;
   gap: 10px;
