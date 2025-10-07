@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Simple Routine';
-  src: url('./assets/fonts/SimpleRoutine.otf') format('opentype');
+  font-family: 'NanumBrushScript';
+  src: url('./assets/fonts/NanumBrushScript-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Simple Routine', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'NanumBrushScript', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
