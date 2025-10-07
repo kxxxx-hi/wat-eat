@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'NanumBrushScript';
-  src: url('./assets/fonts/NanumBrushScript-Regular.ttf') format('truetype');
+  font-family: 'MelonFruit';
+  src: url('./assets/fonts/MelonFruit.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'NanumBrushScript', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'MelonFruit', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
