@@ -35,10 +35,13 @@ const MenuPage = ({ cart, addToCart, removeFromCart, updateQuantity, getSubtotal
         <button className="back-btn" onClick={() => navigate('/')} title="Back">
           ←
         </button>
-        <h1>What's on the Menu?</h1>
         <div className="menu-stats">
           <span>{filteredDishes.length} delicious dishes</span>
         </div>
+      </div>
+      
+      <div className="menu-title-section">
+        <h1>What's on the Menu?</h1>
       </div>
 
       <div className="cuisine-tabs">

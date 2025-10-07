@@ -47,6 +47,9 @@ const RandomIdeaPage = ({ addToCart }) => {
         <button className="back-btn" onClick={() => navigate('/')} title="Back">
           ←
         </button>
+      </div>
+      
+      <div className="idea-title-section">
         <h1>💡 Give me an idea</h1>
       </div>
 
