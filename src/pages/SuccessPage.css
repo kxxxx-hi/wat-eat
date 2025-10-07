@@ -161,6 +161,7 @@
 }
 
 .order-item-name {
+  font-family: 'PipersPlayroom', cursive, sans-serif;
   font-weight: 600;
   color: #2C3E50;
   font-size: 0.7rem;

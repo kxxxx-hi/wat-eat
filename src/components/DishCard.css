@@ -132,6 +132,7 @@
 }
 
 .dish-description {
+  font-family: 'PipersPlayroom', cursive, sans-serif;
   color: #6C7A89;
   font-size: 0.5rem;
   line-height: 1.3;
@@ -158,6 +159,7 @@
 }
 
 .rating-label {
+  font-family: 'PipersPlayroom', cursive, sans-serif;
   font-weight: 600;
   color: #2C3E50;
   margin-right: 5px;

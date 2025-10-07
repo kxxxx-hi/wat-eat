@@ -34,6 +34,7 @@
 }
 
 .cart-header h3 {
+  font-family: 'PipersPlayroom', cursive, sans-serif;
   color: #2C3E50;
   font-size: 0.8rem;
   font-weight: 700;
@@ -102,6 +103,7 @@
 }
 
 .cart-item-details h4 {
+  font-family: 'PipersPlayroom', cursive, sans-serif;
   font-size: 0.6rem;
   font-weight: 600;
   color: #2C3E50;
