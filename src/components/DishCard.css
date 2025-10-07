@@ -124,7 +124,8 @@
 }
 
 .dish-name {
-  font-size: 0.24rem;
+  font-family: 'MelonFruit', cursive, sans-serif; 
+  font-size: 1.2rem; 
   font-weight: 700;
   color: #2C3E50;
   margin-bottom: 5px;
