@@ -252,7 +252,7 @@ export const dishes = [
   {
   "id": 26,
   "name": "Tantanmen at Takagi",
-  "picture": "🍜",
+  "picture": "https://takagiramen.com/wp-content/uploads/2023/11/tantanmen-chinese-inspired-ramen.webp",
   "marcoLikeability": 5,
   "kexinLikeability": 4,
   "cost": 15,
@@ -262,7 +262,7 @@ export const dishes = [
   {
   "id": 27,
   "name": "Miso Ramen at Takagi",
-  "picture": "🍜",
+  "picture": "https://takagiramen.com/wp-content/uploads/2023/10/misso-ramen.webp",
   "marcoLikeability": 4,
   "kexinLikeability": 4,
   "cost": 14,
