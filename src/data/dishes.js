@@ -166,7 +166,7 @@ export const dishes = [
     marcoLikeability: 2,
     kexinLikeability: 5,
     cost: 5.0,
-    cuisine: "Fruit",
+    cuisine: "Dessert",
     description: "Sweet. Melty. Sichuanese."
   },
   {
