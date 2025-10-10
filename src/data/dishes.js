@@ -198,5 +198,145 @@ export const dishes = [
     cost: 7.5,
     cuisine: "Global",
     description: "Portable salad that learned karate."
+  },
+  {
+  "id": 21,
+  "name": "Chickpeas at Indian",
+  "picture": "🫘",
+  "marcoLikeability": 4,
+  "kexinLikeability": 5,
+  "cost": 2,
+  "cuisine": "Indian",
+  "description": "Protein pearls in spiced gravy."
+  },
+  {
+  "id": 22,
+  "name": "Prata at Indian",
+  "picture": "🫓",
+  "marcoLikeability": 5,
+  "kexinLikeability": 5,
+  "cost": 1,
+  "cuisine": "Indian",
+  "description": "Crisp folds, soft heart."
+  },
+  {
+  "id": 23,
+  "name": "Eggplant at Hawker Sichuanese",
+  "picture": "🍆",
+  "marcoLikeability": 3,
+  "kexinLikeability": 4,
+  "cost": 9,
+  "cuisine": "Hawker Sichuanese",
+  "description": "Silky aubergine with fire."
+  },
+  {
+  "id": 24,
+  "name": "Cabbage at Hawker Sichuanese",
+  "picture": "🥬",
+  "marcoLikeability": 3,
+  "kexinLikeability": 3,
+  "cost": 8,
+  "cuisine": "Hawker Sichuanese",
+  "description": "Wok-kissed crunch, chili buzz."
+  },
+  {
+  "id": 25,
+  "name": "Stir Fried Beans at Hawker Sichuanese",
+  "picture": "🫘🥢",
+  "marcoLikeability": 4,
+  "kexinLikeability": 4,
+  "cost": 9,
+  "cuisine": "Hawker Sichuanese",
+  "description": "Blistered pods with numbing zing."
+  },
+  {
+  "id": 26,
+  "name": "Tantanmen at Takagi",
+  "picture": "🍜",
+  "marcoLikeability": 5,
+  "kexinLikeability": 4,
+  "cost": 15,
+  "cuisine": "Takagi",
+  "description": "Sesame heat, slurp-ready."
+  },
+  {
+  "id": 27,
+  "name": "Miso Ramen at Takagi",
+  "picture": "🍜",
+  "marcoLikeability": 4,
+  "kexinLikeability": 4,
+  "cost": 14,
+  "cuisine": "Takagi",
+  "description": "Miso-rich broth, cozy swirl."
+  },
+  {
+  "id": 28,
+  "name": "Chendol with Corns at Dessert",
+  "picture": "🍧🌽",
+  "marcoLikeability": 3,
+  "kexinLikeability": 5,
+  "cost": 2.6,
+  "cuisine": "Dessert",
+  "description": "Pandan jelly meets sweet kernels."
+  },
+  {
+  "id": 29,
+  "name": "Chendol Original at Dessert",
+  "picture": "🍧",
+  "marcoLikeability": 4,
+  "kexinLikeability": 5,
+  "cost": 2.4,
+  "cuisine": "Dessert",
+  "description": "Gula melaka, shaved ice bliss."
+  },
+  {
+  "id": 30,
+  "name": "Dahl at Indian",
+  "picture": "🍲",
+  "marcoLikeability": 4,
+  "kexinLikeability": 4,
+  "cost": 2,
+  "cuisine": "Indian",
+  "description": "Lentils slow-cooked to comfort."
+  },
+  {
+  "id": 31,
+  "name": "Gobhi Manchurian at Pepper Castle",
+  "picture": "[https://www.peppercastle.sg/uploads/2/2021-10/gobi_manchurian_mainjpg.png](https://www.peppercastle.sg/uploads/2/2021-10/gobi_manchurian_mainjpg.png)",
+  "marcoLikeability": 5,
+  "kexinLikeability": 4,
+  "cost": 17.9,
+  "cuisine": "Pepper Castle",
+  "description": "Crispy cauliflower in tangy glaze."
+  },
+  {
+  "id": 32,
+  "name": "Plain Naan at Pepper Castle",
+  "picture": "[https://www.peppercastle.sg/uploads/2/2020-10/1057826.jpg](https://www.peppercastle.sg/uploads/2/2020-10/1057826.jpg)",
+  "marcoLikeability": 5,
+  "kexinLikeability": 5,
+  "cost": 3,
+  "cuisine": "Pepper Castle",
+  "description": "Tandoor-kissed pillow bread."
+  },
+  {
+  "id": 33,
+  "name": "Plain Pulao Rice at Pepper Castle",
+  "picture": "[https://www.peppercastle.sg/uploads/2/2020-10/1057841.jpg](https://www.peppercastle.sg/uploads/2/2020-10/1057841.jpg)",
+  "marcoLikeability": 4,
+  "kexinLikeability": 4,
+  "cost": 4.9,
+  "cuisine": "Pepper Castle",
+  "description": "Fragrant grains, subtle spice."
+  },
+  {
+  "id": 34,
+  "name": "Dal Tadka at Pepper Castle",
+  "picture": "[https://www.peppercastle.sg/uploads/2/2020-10/1057769.jpg](https://www.peppercastle.sg/uploads/2/2020-10/1057769.jpg)",
+  "marcoLikeability": 5,
+  "kexinLikeability": 5,
+  "cost": 14.9,
+  "cuisine": "Pepper Castle",
+  "description": "Tempered lentils, buttery finish."
   }
 ];
