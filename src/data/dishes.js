@@ -342,8 +342,7 @@ export const dishes = [
   {
   "id": 35,
   "name": "Basil Rice at Hawker",
-  "picture": "https://hot-thai-kitchen.com/wp-content/uploads/2022/10/pad-gaprao-beef-sq-2-500x375.jpg
-  ",
+  "picture": "https://hot-thai-kitchen.com/wp-content/uploads/2022/10/pad-gaprao-beef-sq-2-500x375.jpg",
   "marcoLikeability": 5,
   "kexinLikeability": 4,
   "cost": 7.2,
@@ -363,8 +362,7 @@ export const dishes = [
   {
   "id": 37,
   "name": "Large Fries at MacDomnald",
-  "picture": "https://www.mcdonalds.com.sg/sites/default/files/2025-02/French%20Fries%20-%20M.jpg
-  ",
+  "picture": "https://www.mcdonalds.com.sg/sites/default/files/2025-02/French%20Fries%20-%20M.jpg",
   "marcoLikeability": 4,
   "kexinLikeability": 5,
   "cost": 3.5,
@@ -374,8 +372,7 @@ export const dishes = [
   {
   "id": 38,
   "name": "McSpicy at MacDomnald",
-  "picture": "https://www.mcdonalds.com.sg/sites/default/files/2023-02/1200x1200_MOP_BBPilot_McSpicy.png
-  ",
+  "picture": "https://www.mcdonalds.com.sg/sites/default/files/2023-02/1200x1200_MOP_BBPilot_McSpicy.png",
   "marcoLikeability": 5,
   "kexinLikeability": 4,
   "cost": 6.5,
@@ -385,8 +382,7 @@ export const dishes = [
   {
   "id": 39,
   "name": "Chicken McSpicy 2pc at MacDomnald",
-  "picture": "https://www.mcdonalds.com.sg/sites/default/files/2024-06/1200x1200_MOP_CMC_Spicy_2pc_nobg_noblurb.png
-  ",
+  "picture": "https://www.mcdonalds.com.sg/sites/default/files/2024-06/1200x1200_MOP_CMC_Spicy_2pc_nobg_noblurb.png",
   "marcoLikeability": 5,
   "kexinLikeability": 4,
   "cost": 8.5,
@@ -396,8 +392,7 @@ export const dishes = [
   {
   "id": 40,
   "name": "Latte at Olla Specialty Coffee",
-  "picture": "https://static.wixstatic.com/media/e40fb4_400d13cdbdc4486ea69dae2b13ceac01~mv2.jpg/v1/crop/x_43,y_0,w_914,h_1000/fill/w_280,h_306,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Corporate%20mobile%20coffee%20paper%20cup%2001.jpg
-  ",
+  "picture": "https://static.wixstatic.com/media/e40fb4_400d13cdbdc4486ea69dae2b13ceac01~mv2.jpg/v1/crop/x_43,y_0,w_914,h_1000/fill/w_280,h_306,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Corporate%20mobile%20coffee%20paper%20cup%2001.jpg",
   "marcoLikeability": 4,
   "kexinLikeability": 5,
   "cost": 5.0,
@@ -407,8 +402,7 @@ export const dishes = [
   {
   "id": 41,
   "name": "Latte at Pocket",
-  "picture": "https://danielfooddiary.com/wp-content/uploads/2023/08/pocket12.jpg
-  ",
+  "picture": "https://danielfooddiary.com/wp-content/uploads/2023/08/pocket12.jpg",
   "marcoLikeability": 4,
   "kexinLikeability": 5,
   "cost": 5.0,
@@ -428,8 +422,7 @@ export const dishes = [
   {
   "id": 43,
   "name": "Hawaiian Pizza at Now Pizza",
-  "picture": "https://static.wixstatic.com/media/0abd0d_35cce31831bd42e79daf55edafa73cae~mv2.png/v1/fill/w_1891,h_1080,al_c,q_95,enc_auto/0abd0d_35cce31831bd42e79daf55edafa73cae~mv2.png
-  ",
+  "picture": "https://static.wixstatic.com/media/0abd0d_35cce31831bd42e79daf55edafa73cae~mv2.png/v1/fill/w_1891,h_1080,al_c,q_95,enc_auto/0abd0d_35cce31831bd42e79daf55edafa73cae~mv2.png",
   "marcoLikeability": 4,
   "kexinLikeability": 4,
   "cost": 12.0,
@@ -439,8 +432,7 @@ export const dishes = [
   {
   "id": 44,
   "name": "Pepperoni Pizza at Now Pizza",
-  "picture": "https://static.wixstatic.com/media/0abd0d_6775bfc52d484407a2fdf177c5d2be1c~mv2.png/v1/fill/w_1891,h_1080,al_c,q_95,enc_auto/0abd0d_6775bfc52d484407a2fdf177c5d2be1c~mv2.png
-  ",
+  "picture": "https://static.wixstatic.com/media/0abd0d_6775bfc52d484407a2fdf177c5d2be1c~mv2.png/v1/fill/w_1891,h_1080,al_c,q_95,enc_auto/0abd0d_6775bfc52d484407a2fdf177c5d2be1c~mv2.png",
   "marcoLikeability": 5,
   "kexinLikeability": 4,
   "cost": 12.0,
@@ -450,8 +442,7 @@ export const dishes = [
   {
   "id": 45,
   "name": "Margherita Pizza at Now Pizza",
-  "picture": "https://static.wixstatic.com/media/0abd0d_ba71800a69aa4e20898f9196ec284b62~mv2.png/v1/fill/w_1891,h_1080,al_c,q_95,enc_auto/0abd0d_ba71800a69aa4e20898f9196ec284b62~mv2.png
-  ",
+  "picture": "https://static.wixstatic.com/media/0abd0d_ba71800a69aa4e20898f9196ec284b62~mv2.png/v1/fill/w_1891,h_1080,al_c,q_95,enc_auto/0abd0d_ba71800a69aa4e20898f9196ec284b62~mv2.png",
   "marcoLikeability": 4,
   "kexinLikeability": 5,
   "cost": 12.0,
@@ -461,8 +452,7 @@ export const dishes = [
   {
   "id": 46,
   "name": "Roujiamo (Pork) at Qinji",
-  "picture": "https://dec-pub-img.obs.ap-southeast-3.myhuaweicloud.com/shopimages/product/16725385057082512.jpeg
-  ",
+  "picture": "https://dec-pub-img.obs.ap-southeast-3.myhuaweicloud.com/shopimages/product/16725385057082512.jpeg",
   "marcoLikeability": 5,
   "kexinLikeability": 5,
   "cost": 8.0,
@@ -472,8 +462,7 @@ export const dishes = [
   {
   "id": 47,
   "name": "Biangbiang (3 in 1) at Huangtudi",
-  "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn
-  :ANd9GcS7j0dLrBpRHM3rsqpDyK1sBwZToiXHs_8wIg&s",
+  "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7j0dLrBpRHM3rsqpDyK1sBwZToiXHs_8wIg&s",
   "marcoLikeability": 5,
   "kexinLikeability": 4,
   "cost": 9.8,
@@ -483,8 +472,7 @@ export const dishes = [
   {
   "id": 48,
   "name": "Roujiamo at Huangtudi",
-  "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn
-  :ANd9GcTF9g-VAdDnQ9idyLMB8LIxaVZFT6TGwDY_3Q&s",
+  "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF9g-VAdDnQ9idyLMB8LIxaVZFT6TGwDY_3Q&s",
   "marcoLikeability": 4,
   "kexinLikeability": 4,
   "cost": 5.0,
