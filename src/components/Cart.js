@@ -95,20 +95,22 @@ const Cart = ({ cart, removeFromCart, updateQuantity, getSubtotal, submitOrder, 
         </div>
       )}
       
-      {/* Always show cart footer with subtotal and checkout button */}
-      <div className="cart-footer">
-        <div className="subtotal">
-          <span>Subtotal:</span>
-          <span className="subtotal-amount">${getSubtotal().toFixed(2)} SGD</span>
+      {/* Show cart footer with subtotal and checkout button only when expanded */}
+      {isExpanded && (
+        <div className="cart-footer">
+          <div className="subtotal">
+            <span>Subtotal:</span>
+            <span className="subtotal-amount">${getSubtotal().toFixed(2)} SGD</span>
+          </div>
+          <button 
+            className={`checkout-btn ${cart.length === 0 ? 'disabled' : ''}`} 
+            onClick={handleCheckout}
+            disabled={cart.length === 0}
+          >
+            Checkout
+          </button>
         </div>
-        <button 
-          className={`checkout-btn ${cart.length === 0 ? 'disabled' : ''}`} 
-          onClick={handleCheckout}
-          disabled={cart.length === 0}
-        >
-          Checkout
-        </button>
-      </div>
+      )}
       
       {/* Show empty message when expanded and cart is empty */}
       {isExpanded && cart.length === 0 && (
