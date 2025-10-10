@@ -226,7 +226,7 @@ export const dishes = [
   "marcoLikeability": 3,
   "kexinLikeability": 4,
   "cost": 9,
-  "cuisine": "Hawker Sichuanese",
+  "cuisine": "Chinese",
   "description": "Silky aubergine with fire."
   },
   {
@@ -236,7 +236,7 @@ export const dishes = [
   "marcoLikeability": 3,
   "kexinLikeability": 3,
   "cost": 8,
-  "cuisine": "Hawker Sichuanese",
+  "cuisine": "Chinese",
   "description": "Wok-kissed crunch, chili buzz."
   },
   {
@@ -246,7 +246,7 @@ export const dishes = [
   "marcoLikeability": 4,
   "kexinLikeability": 4,
   "cost": 9,
-  "cuisine": "Hawker Sichuanese",
+  "cuisine": "Chinese",
   "description": "Blistered pods with numbing zing."
   },
   {
@@ -256,7 +256,7 @@ export const dishes = [
   "marcoLikeability": 5,
   "kexinLikeability": 4,
   "cost": 15,
-  "cuisine": "Takagi",
+  "cuisine": "Japanese",
   "description": "Sesame heat, slurp-ready."
   },
   {
@@ -266,12 +266,12 @@ export const dishes = [
   "marcoLikeability": 4,
   "kexinLikeability": 4,
   "cost": 14,
-  "cuisine": "Takagi",
+  "cuisine": "Japanese",
   "description": "Miso-rich broth, cozy swirl."
   },
   {
   "id": 28,
-  "name": "Chendol with Corns at Dessert",
+  "name": "Chendol with Corn",
   "picture": "🍧🌽",
   "marcoLikeability": 3,
   "kexinLikeability": 5,
@@ -281,7 +281,7 @@ export const dishes = [
   },
   {
   "id": 29,
-  "name": "Chendol Original at Dessert",
+  "name": "Chendol Original",
   "picture": "🍧",
   "marcoLikeability": 4,
   "kexinLikeability": 5,
@@ -302,41 +302,41 @@ export const dishes = [
   {
   "id": 31,
   "name": "Gobhi Manchurian at Pepper Castle",
-  "picture": "[https://www.peppercastle.sg/uploads/2/2021-10/gobi_manchurian_mainjpg.png](https://www.peppercastle.sg/uploads/2/2021-10/gobi_manchurian_mainjpg.png)",
+  "picture": "https://www.peppercastle.sg/uploads/2/2021-10/gobi_manchurian_mainjpg.png",
   "marcoLikeability": 5,
   "kexinLikeability": 4,
   "cost": 17.9,
-  "cuisine": "Pepper Castle",
-  "description": "Crispy cauliflower in tangy glaze."
+  "cuisine": "Indian",
+  "description": "Crazy."
   },
   {
   "id": 32,
   "name": "Plain Naan at Pepper Castle",
-  "picture": "[https://www.peppercastle.sg/uploads/2/2020-10/1057826.jpg](https://www.peppercastle.sg/uploads/2/2020-10/1057826.jpg)",
+  "picture": "https://www.peppercastle.sg/uploads/2/2020-10/1057826.jpg",
   "marcoLikeability": 5,
   "kexinLikeability": 5,
   "cost": 3,
-  "cuisine": "Pepper Castle",
+  "cuisine": "Indian",
   "description": "Tandoor-kissed pillow bread."
   },
   {
   "id": 33,
   "name": "Plain Pulao Rice at Pepper Castle",
-  "picture": "[https://www.peppercastle.sg/uploads/2/2020-10/1057841.jpg](https://www.peppercastle.sg/uploads/2/2020-10/1057841.jpg)",
+  "picture": "https://www.peppercastle.sg/uploads/2/2020-10/1057841.jpg",
   "marcoLikeability": 4,
   "kexinLikeability": 4,
   "cost": 4.9,
-  "cuisine": "Pepper Castle",
+  "cuisine": "Indian",
   "description": "Fragrant grains, subtle spice."
   },
   {
   "id": 34,
   "name": "Dal Tadka at Pepper Castle",
-  "picture": "[https://www.peppercastle.sg/uploads/2/2020-10/1057769.jpg](https://www.peppercastle.sg/uploads/2/2020-10/1057769.jpg)",
+  "picture": "https://www.peppercastle.sg/uploads/2/2020-10/1057769.jpg",
   "marcoLikeability": 5,
   "kexinLikeability": 5,
   "cost": 14.9,
-  "cuisine": "Pepper Castle",
+  "cuisine": "Indian",
   "description": "Tempered lentils, buttery finish."
   }
 ];
