@@ -146,7 +146,7 @@ export const dishes = [
     marcoLikeability: 4,
     kexinLikeability: 5,
     cost: 9.9,
-    cuisine: "Vegetarian",
+    cuisine: "Middle Eastern",
     description: "Proudly introduced by auntie Pina"
   },
   {
@@ -346,7 +346,7 @@ export const dishes = [
   "marcoLikeability": 5,
   "kexinLikeability": 4,
   "cost": 7.2,
-  "cuisine": "Hawker",
+  "cuisine": "Thai",
   "description": "Fragrant Thai basil stir-fry over rice."
   },
   {
@@ -356,7 +356,7 @@ export const dishes = [
   "marcoLikeability": 5,
   "kexinLikeability": 5,
   "cost": 4.0,
-  "cuisine": "Hawker",
+  "cuisine": "Chinese",
   "description": "Classic poached chicken with aromatic rice."
   },
   {
@@ -416,7 +416,7 @@ export const dishes = [
   "marcoLikeability": 5,
   "kexinLikeability": 5,
   "cost": 8.0,
-  "cuisine": "Pocket",
+  "cuisine": "Drinks",
   "description": "Three-part dessert and coffee harmony."
   },
   {
