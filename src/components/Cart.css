@@ -104,7 +104,7 @@
 
 .cart-item-details h4 {
   font-family: 'PipersPlayroom', cursive, sans-serif;
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: #2C3E50;
   margin-bottom: 3px;
@@ -176,14 +176,14 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 14px;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: #2C3E50;
 }
 
 .subtotal-amount {
   color: #8BC34A;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 .checkout-btn {
@@ -194,7 +194,7 @@
   padding: 10px;
   border-radius: 8px;
   font-family: 'PipersPlayroom', cursive, sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
