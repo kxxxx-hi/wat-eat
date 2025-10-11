@@ -204,30 +204,30 @@ export const dishes = [
   "name": "Chickpeas at Indian",
   "picture": "🫘",
   "marcoLikeability": 4,
-  "kexinLikeability": 5,
+  "kexinLikeability": 3,
   "cost": 2,
   "cuisine": "Indian",
-  "description": "Protein pearls in spiced gravy."
+  "description": "Especially salty on Sundays"
   },
   {
   "id": 22,
   "name": "Prata at Indian",
   "picture": "🫓",
-  "marcoLikeability": 5,
-  "kexinLikeability": 5,
+  "marcoLikeability": 3,
+  "kexinLikeability": 3,
   "cost": 1,
   "cuisine": "Indian",
-  "description": "Crisp folds, soft heart."
+  "description": "Freshly made (depending on the mood of the Indian bros)"
   },
   {
   "id": 23,
   "name": "Eggplant at Hawker Sichuanese",
   "picture": "🍆",
   "marcoLikeability": 3,
-  "kexinLikeability": 4,
+  "kexinLikeability": 3,
   "cost": 9,
   "cuisine": "Chinese",
-  "description": "Silky aubergine with fire."
+  "description": "Really really oily"
   },
   {
   "id": 24,
@@ -237,7 +237,7 @@ export const dishes = [
   "kexinLikeability": 3,
   "cost": 8,
   "cuisine": "Chinese",
-  "description": "Wok-kissed crunch, chili buzz."
+  "description": "Really really oily too"
   },
   {
   "id": 25,
@@ -247,67 +247,67 @@ export const dishes = [
   "kexinLikeability": 4,
   "cost": 9,
   "cuisine": "Chinese",
-  "description": "Blistered pods with numbing zing."
+  "description": "Garlic is not necessary tbh"
   },
   {
   "id": 26,
   "name": "Tantanmen at Takagi",
   "picture": "https://takagiramen.com/wp-content/uploads/2023/11/tantanmen-chinese-inspired-ramen.webp",
-  "marcoLikeability": 5,
-  "kexinLikeability": 4,
+  "marcoLikeability": 3,
+  "kexinLikeability": 3,
   "cost": 15,
   "cuisine": "Japanese",
-  "description": "Sesame heat, slurp-ready."
+  "description": "Only the first time was good"
   },
   {
   "id": 27,
   "name": "Miso Ramen at Takagi",
   "picture": "https://takagiramen.com/wp-content/uploads/2023/10/misso-ramen.webp",
-  "marcoLikeability": 4,
-  "kexinLikeability": 4,
+  "marcoLikeability": 3,
+  "kexinLikeability": 3,
   "cost": 14,
   "cuisine": "Japanese",
-  "description": "Miso-rich broth, cozy swirl."
+  "description": "Simple, corns are good"
   },
   {
   "id": 28,
   "name": "Chendol with Corn",
   "picture": "🍧🌽",
-  "marcoLikeability": 3,
-  "kexinLikeability": 5,
+  "marcoLikeability": 4,
+  "kexinLikeability": 3,
   "cost": 2.6,
   "cuisine": "Dessert",
-  "description": "Pandan jelly meets sweet kernels."
+  "description": "Why do they have to make the green fluorescent"
   },
   {
   "id": 29,
   "name": "Chendol Original",
   "picture": "🍧",
   "marcoLikeability": 4,
-  "kexinLikeability": 5,
+  "kexinLikeability": 3,
   "cost": 2.4,
   "cuisine": "Dessert",
-  "description": "Gula melaka, shaved ice bliss."
+  "description": "A little bit of salt makes it taste better"
   },
   {
   "id": 30,
-  "name": "Dahl at Indian",
+  "name": "Dal at Indian",
   "picture": "🍲",
   "marcoLikeability": 4,
-  "kexinLikeability": 4,
+  "kexinLikeability": 3,
   "cost": 2,
   "cuisine": "Indian",
-  "description": "Lentils slow-cooked to comfort."
+  "description": "When it's good it's pretty good"
   },
   {
   "id": 31,
   "name": "Gobhi Manchurian at Pepper Castle",
   "picture": "https://www.peppercastle.sg/uploads/2/2021-10/gobi_manchurian_mainjpg.png",
   "marcoLikeability": 5,
-  "kexinLikeability": 4,
+  "kexinLikeability": 5,
   "cost": 17.9,
   "cuisine": "Indian",
-  "description": "Crazy."
+  "description": "Crazy. Shit yourself afterwards tho."
   },
   {
   "id": 32,
@@ -317,17 +317,17 @@ export const dishes = [
   "kexinLikeability": 5,
   "cost": 3,
   "cuisine": "Indian",
-  "description": "Tandoor-kissed pillow bread."
+  "description": "Good to eat by itself too"
   },
   {
   "id": 33,
   "name": "Plain Pulao Rice at Pepper Castle",
   "picture": "https://www.peppercastle.sg/uploads/2/2020-10/1057841.jpg",
-  "marcoLikeability": 4,
-  "kexinLikeability": 4,
+  "marcoLikeability": 3,
+  "kexinLikeability": 5,
   "cost": 4.9,
   "cuisine": "Indian",
-  "description": "Fragrant grains, subtle spice."
+  "description": "This rice is good."
   },
   {
   "id": 34,
@@ -337,57 +337,57 @@ export const dishes = [
   "kexinLikeability": 5,
   "cost": 14.9,
   "cuisine": "Indian",
-  "description": "Tempered lentils, buttery finish."
+  "description": "Small portion, insane taste."
   },
   {
   "id": 35,
   "name": "Basil Rice at Hawker",
   "picture": "https://hot-thai-kitchen.com/wp-content/uploads/2022/10/pad-gaprao-beef-sq-2-500x375.jpg",
-  "marcoLikeability": 5,
+  "marcoLikeability": 4,
   "kexinLikeability": 4,
   "cost": 7.2,
   "cuisine": "Thai",
-  "description": "Fragrant Thai basil stir-fry over rice."
+  "description": "Has a bit of wok hey"
   },
   {
   "id": 36,
   "name": "Lakeside Chicken Rice",
   "picture": "🍗🍚",
-  "marcoLikeability": 5,
-  "kexinLikeability": 5,
+  "marcoLikeability": 3,
+  "kexinLikeability": 3,
   "cost": 4.0,
   "cuisine": "Chinese",
-  "description": "Classic poached chicken with aromatic rice."
+  "description": "Quick dinner when you really don't know what to get"
   },
   {
   "id": 37,
   "name": "Large Fries at MacDomnald",
   "picture": "https://www.mcdonalds.com.sg/sites/default/files/2025-02/French%20Fries%20-%20M.jpg",
-  "marcoLikeability": 4,
+  "marcoLikeability": 5,
   "kexinLikeability": 5,
   "cost": 3.5,
   "cuisine": "American",
-  "description": "Golden crisp fries, perfect for sharing."
+  "description": "Garlic chilli sauce is heresy I hope we all agree on this"
   },
   {
   "id": 38,
   "name": "McSpicy at MacDomnald",
   "picture": "https://www.mcdonalds.com.sg/sites/default/files/2023-02/1200x1200_MOP_BBPilot_McSpicy.png",
-  "marcoLikeability": 5,
-  "kexinLikeability": 4,
+  "marcoLikeability": 4,
+  "kexinLikeability": 3,
   "cost": 6.5,
   "cuisine": "American",
-  "description": "Crispy, fiery chicken burger classic."
+  "description": "The classic at MCD"
   },
   {
   "id": 39,
   "name": "Chicken McSpicy 2pc at MacDomnald",
   "picture": "https://www.mcdonalds.com.sg/sites/default/files/2024-06/1200x1200_MOP_CMC_Spicy_2pc_nobg_noblurb.png",
-  "marcoLikeability": 5,
+  "marcoLikeability": 3,
   "kexinLikeability": 4,
   "cost": 8.5,
   "cuisine": "American",
-  "description": "Two pieces of spicy fried chicken heat."
+  "description": "If you peel the skin off it's a healthy meal"
   },
   {
   "id": 40,
@@ -397,17 +397,17 @@ export const dishes = [
   "kexinLikeability": 5,
   "cost": 5.0,
   "cuisine": "Drinks",
-  "description": "Smooth espresso with silky steamed milk."
+  "description": "Good milk"
   },
   {
   "id": 41,
   "name": "Latte at Pocket",
   "picture": "https://danielfooddiary.com/wp-content/uploads/2023/08/pocket12.jpg",
-  "marcoLikeability": 4,
+  "marcoLikeability": 5,
   "kexinLikeability": 5,
   "cost": 5.0,
   "cuisine": "Drinks",
-  "description": "Light roast latte with clean finish."
+  "description": "GOOOD"
   },
   {
   "id": 42,
@@ -417,37 +417,37 @@ export const dishes = [
   "kexinLikeability": 5,
   "cost": 8.0,
   "cuisine": "Drinks",
-  "description": "Three-part dessert and coffee harmony."
+  "description": "Espresso a bit unstable but still good most of the time"
   },
   {
   "id": 43,
   "name": "Hawaiian Pizza at Now Pizza",
   "picture": "https://static.wixstatic.com/media/0abd0d_35cce31831bd42e79daf55edafa73cae~mv2.png/v1/fill/w_1891,h_1080,al_c,q_95,enc_auto/0abd0d_35cce31831bd42e79daf55edafa73cae~mv2.png",
-  "marcoLikeability": 4,
+  "marcoLikeability": 3,
   "kexinLikeability": 4,
   "cost": 12.0,
   "cuisine": "Italian",
-  "description": "Sweet pineapple, savory ham balance."
+  "description": "Pretty good dough and pineapple."
   },
   {
   "id": 44,
   "name": "Pepperoni Pizza at Now Pizza",
   "picture": "https://static.wixstatic.com/media/0abd0d_6775bfc52d484407a2fdf177c5d2be1c~mv2.png/v1/fill/w_1891,h_1080,al_c,q_95,enc_auto/0abd0d_6775bfc52d484407a2fdf177c5d2be1c~mv2.png",
-  "marcoLikeability": 5,
-  "kexinLikeability": 4,
+  "marcoLikeability": 3,
+  "kexinLikeability": 3,
   "cost": 12.0,
   "cuisine": "Italian",
-  "description": "Crispy crust, spicy pepperoni comfort."
+  "description": "Crispy crust and a lot of thyme"
   },
   {
   "id": 45,
   "name": "Margherita Pizza at Now Pizza",
   "picture": "https://static.wixstatic.com/media/0abd0d_ba71800a69aa4e20898f9196ec284b62~mv2.png/v1/fill/w_1891,h_1080,al_c,q_95,enc_auto/0abd0d_ba71800a69aa4e20898f9196ec284b62~mv2.png",
-  "marcoLikeability": 4,
-  "kexinLikeability": 5,
+  "marcoLikeability": 3,
+  "kexinLikeability": 3,
   "cost": 12.0,
   "cuisine": "Italian",
-  "description": "Tomato, mozzarella, and basil simplicity."
+  "description": "More decent than PizzaHut"
   },
   {
   "id": 46,
@@ -464,7 +464,7 @@ export const dishes = [
   "name": "Biangbiang (3 in 1) at Huangtudi",
   "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7j0dLrBpRHM3rsqpDyK1sBwZToiXHs_8wIg&s",
   "marcoLikeability": 5,
-  "kexinLikeability": 4,
+  "kexinLikeability": 5,
   "cost": 9.8,
   "cuisine": "Chinese",
   "description": "Wide noodles with chili, meat, and egg."
